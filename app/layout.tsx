@@ -28,18 +28,20 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <header className="flex items-center gap-4 mx-auto max-w-[692px] px-6 py-4 sm:py-4 md:py-16">
-        <Image
-          src="/avatar.png"
-          alt="Аватар Валеры Сироткина"
-          width={80}
-          height={80}
-          className="rounded-full"
-        />
-        <section>
-        <Link className="text-base inline-block font-medium no-underline" href="/">Валера Сироткин</Link>
-        <p className="text-base leading-none text-gray-500 dark:text-gray-400 no-underline">Дизайнер · Арт-директор · Музыкант</p>
-        </section>
+      <header className="mx-auto max-w-[692px] px-6 py-4 sm:py-4 md:py-16">
+        <Link href="/" className="flex items-center gap-4 no-underline">
+          <Image
+            src="/avatar.png"
+            alt="Аватар Валеры Сироткина"
+            width={80}
+            height={80}
+            className="rounded-full"
+          />
+          <section>
+            <span className="text-base inline-block font-medium">Валера Сироткин</span>
+            <p className="text-base leading-none text-gray-500 dark:text-gray-400">Дизайнер · Арт-директор · Музыкант</p>
+          </section>
+        </Link>
       </header>
       {children}
       </body>

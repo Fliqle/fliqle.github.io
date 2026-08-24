@@ -12,6 +12,7 @@ export default function Home() {
         </span>
 
         {/* Заметки */}
+        {/*
         <section className="max-w-4xl mx-auto py-16">
           <h2 className="font-medium mb-1">Заметки</h2>
           <div className="-mx-3 flex flex-col rounded-xl px-3 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800 sm:py-2">
@@ -19,9 +20,10 @@ export default function Home() {
             <p className="text-sm text-gray-500 dark:text-gray-400">Что такое цвет и как устроены современные экраны</p>
           </div>
         </section>
+        */}
 
         {/* Видео */}
-        <section>
+        <section className="mt-16">
           <h2 className="font-medium mb-1">Выступления</h2>
 
           <div className="space-y-2">
