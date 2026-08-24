@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { basePath } from "../base-path";
 
 export const metadata: Metadata = {
   title: "Опыт — Валера Сироткин",
@@ -34,7 +35,7 @@ export default function About() {
           </div>
 
           <Image
-            src="/VK.png"
+            src={`${basePath}/VK.png`}
             alt="Баннер VK"
             width={968}
             height={512}
@@ -75,7 +76,7 @@ export default function About() {
           </div>
 
           <Image
-            src="/Mail.png"
+            src={`${basePath}/Mail.png`}
             alt="Баннер Mail.ru Group"
             width={968}
             height={512}
@@ -119,7 +120,7 @@ export default function About() {
           </div>
 
           <Image
-            src="/Tensor.png"
+            src={`${basePath}/Tensor.png`}
             alt="Баннер компании «Тензор»"
             width={968}
             height={512}

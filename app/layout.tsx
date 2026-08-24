@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { basePath } from "./base-path";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,7 @@ export default function RootLayout({
       <header className="mx-auto max-w-[692px] px-6 py-4 sm:py-4 md:py-16">
         <Link href="/" className="flex items-center gap-4 no-underline">
           <Image
-            src="/avatar.png"
+            src={`${basePath}/avatar.png`}
             alt="Аватар Валеры Сироткина"
             width={80}
             height={80}

@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
+import { basePath } from "./app/base-path";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/personal-site",
+  basePath,
   images: {
     unoptimized: true,
   },
