@@ -28,8 +28,8 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <header className="mx-auto max-w-[692px] px-6 py-4 sm:py-4 md:py-16">
-        <Link href="/" className="flex items-center gap-4 no-underline">
+      <header className="mx-auto flex max-w-[692px] items-center gap-4 px-6 py-4 sm:py-4 md:py-16">
+        <Link href="/" className="shrink-0">
           <Image
             src="/avatar.png"
             alt="Аватар Валеры Сироткина"
@@ -37,11 +37,43 @@ export default function RootLayout({
             height={80}
             className="rounded-full"
           />
-          <section>
-            <span className="text-base inline-block font-medium">Валера Сироткин</span>
-            <p className="text-base leading-none text-gray-500 dark:text-gray-400">Дизайнер · Арт-директор · Музыкант</p>
-          </section>
         </Link>
+        <section>
+          <Link href="/" className="text-base inline-block font-medium no-underline">Валера Сироткин</Link>
+          <p className="text-base leading-none text-gray-500 dark:text-gray-400">Дизайнер · Арт-директор · Музыкант</p>
+          <div className="mt-2 flex items-center gap-3 text-base text-gray-500 dark:text-gray-400">
+            <a
+              href="https://www.linkedin.com/in/vsirotkin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://vk.ru/fliqle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600"
+            >
+              VK
+            </a>
+            <a
+              href="https://cloud.mail.ru/public/ovum/cvjPJQ5KB"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600"
+            >
+              Resume
+            </a>
+            <a
+              href="mailto:valera@internet.ru"
+              className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600"
+            >
+              Email
+            </a>
+          </div>
+        </section>
       </header>
       {children}
       </body>
