@@ -45,7 +45,7 @@ export function SiteHeader() {
           </Link>
         </div>
         <p className="text-base leading-none text-gray-500 dark:text-gray-400">
-          {isEn ? "Designer · Art Director · Musician" : "Дизайнер · Арт-директор · Музыкант"}
+          {isEn ? "Product Designer · Design Leader" : "Продуктовый дизайнер · Дизайн-лидер"}
         </p>
         <div className="mt-2 flex items-center gap-3 text-base text-gray-500 dark:text-gray-400">
           <a href="https://www.linkedin.com/in/vsirotkin/" target="_blank" rel="noopener noreferrer" className={linkClass}>

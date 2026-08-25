@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -7,16 +8,106 @@ export const metadata: Metadata = {
     "Valera Sirotkin's personal site: a designer with 15+ years of experience, art director and musician. Working at VK on Mail products.",
 };
 
+const projects = [
+  {
+    href: "/en/projects/mail",
+    title: "Mail",
+    dates: "2019–2026",
+    description: "Systemic product design: from mail client interfaces to the key user scenarios across all of Mail.",
+    image: "/projects/mail.png",
+  },
+  {
+    href: "/en/projects/paradigm",
+    title: "Paradigm Design System",
+    dates: "2021–2026",
+    description: "A unified design system for Mail and VK Workspace B2B and B2C products: tokens, component libraries, processes.",
+    image: "/projects/paradigm.png",
+  },
+  {
+    href: "/en/projects/vkui",
+    title: "VKUI Design System",
+    dates: "2021–2024",
+    description: "VK's core design system: tokens, component libraries.",
+    image: "/projects/vkui.png",
+  },
+  {
+    href: "/en/projects/vkdobro",
+    title: "VK Dobro",
+    dates: "2022–2023",
+    description: "VK's charity platform. Helped with the rebrand and the migration to the shared design system.",
+    image: "/projects/vkdobro.png",
+  },
+  {
+    href: "/en/projects/rdc",
+    title: "Russian Design Cup",
+    dates: "2021–2026",
+    description: "The largest design competition in Russia.",
+    image: "/projects/rdc.png",
+  },
+  {
+    href: "/en/projects/vkeducation",
+    title: "VK Education",
+    dates: "2021–2026",
+    description: "Lectures on interface design fundamentals and Figma practice.",
+    image: "/projects/vkeducation.png",
+  },
+  {
+    href: "/en/projects/cloudizer",
+    title: "Cloudizer",
+    dates: "2026",
+    description: "Personal project — a browser extension that turns Mail Cloud into a Pinterest-like feed.",
+    image: "/projects/cloudizer.png",
+  },
+  {
+    href: "/en/projects/ladoga",
+    title: "Ladoga UI",
+    dates: "2025",
+    description: "A joint project with the VKUI team to build a foundational design system.",
+    image: "/projects/ladoga.png",
+  },
+];
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-[692px] overflow-x-hidden px-6 antialiased ">
-      <h1 className="sr-only">Valera Sirotkin — designer, art director, musician</h1>
+      <h1 className="sr-only">Valera Sirotkin — product designer and design leader</h1>
       {/* Now */}
       <section className="max-w-4xl mx-auto py-16">
-        <p className="mb-2">I&apos;m a designer with more than 15 years of experience — I love simple solutions backed by serious work. I currently work at VK on Mail products: I started with systemic product interfaces, and now lead the Disrupt design direction and the Paradigm design system. I&apos;ve taken part in major redesigns, rebrandings, and helped build VKUI — VK&apos;s core design system.</p>
+        <p className="mb-2">I&apos;m a designer with more than 15 years of experience — I love simple solutions backed by serious work. I currently work at VK on Mail products: I started with systemic product interfaces, and now lead the Mail design direction and the Paradigm design system. I&apos;ve taken part in major redesigns, rebrandings, and helped build VKUI — VK&apos;s core design system.</p>
         <span>
           You can read more about my work as a designer <Link href="/en/about" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">here</Link>
         </span>
+
+        {/* Projects */}
+        <section className="mt-16">
+          <h2 className="font-medium mb-1">Projects</h2>
+
+          <div className="space-y-2">
+            {projects.map((project) => (
+              <Link
+                key={project.href}
+                href={project.href}
+                className="-mx-3 flex items-center gap-4 rounded-xl px-3 py-3 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
+              >
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt=""
+                    width={180}
+                    height={96}
+                    className="h-24 w-[180px] shrink-0 rounded-lg object-cover"
+                  />
+                ) : (
+                  <div className="h-24 w-[180px] shrink-0 rounded-lg bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800" />
+                )}
+                <div>
+                  <h3 className="inline-block">{project.title} · {project.dates}</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{project.description}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* Talks */}
         <section className="mt-16">
