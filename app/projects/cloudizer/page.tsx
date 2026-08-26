@@ -20,14 +20,17 @@ export default function CloudizerProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Cloudizer</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2026 · личный проект</p>
 
-      <ProjectBanner src={null} alt="Cloudizer" />
+      <ProjectBanner src="/projects/inside/Cloudizer1.png" alt="Cloudizer" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
-          Cloudizer — расширение для браузера, которое превращает Облако Mail в визуальную
-          ленту в духе Pinterest: файлы и фото отображаются в виде мудборда, который удобно
-          листать и группировать. Делаю в свободное время как личный pet-проект, от идеи и
-          интерфейса до первых пользователей.
+          Cloudizer — небольшое расширение для браузера которое делает из вашего Облака Mail - Pinterest. На каждую картинку в интернете добавляет кнопку, для сохранения в Облаке Mail, можно через контекстное меню. Картинки можно делить на категории и сохранять в отдельные подпапки. 
+        </p>
+      </div>
+
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-12">
+        <p>
+          Cloudizer — небольшое расширение для браузера которое делает из вашего Облака Mail - Pinterest. На каждую картинку в интернете добавляет кнопку, для сохранения в Облаке Mail, можно через контекстное меню. Картинки можно делить на категории и сохранять в отдельные подпапки. 
         </p>
       </div>
 

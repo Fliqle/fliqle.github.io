@@ -20,14 +20,23 @@ export default function CloudizerProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Cloudizer</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2026 · personal project</p>
 
-      <ProjectBanner src={null} alt="Cloudizer" />
+      <ProjectBanner src="/projects/inside/Cloudizer1.png" alt="Cloudizer" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
-          Cloudizer is a browser extension that turns Mail Cloud into a Pinterest-style visual
-          feed: files and photos show up as a moodboard that&apos;s easy to browse and group.
-          Building it in my spare time as a personal pet project, from the idea and interface
-          to the first users.
+          Cloudizer is a small browser extension that turns your Mail Cloud into a Pinterest.
+          It adds a save button to every image on the web — or you can save it via the context
+          menu — straight into Mail Cloud. Images can be sorted into categories and saved into
+          separate subfolders.
+        </p>
+      </div>
+
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-12">
+        <p>
+          Cloudizer is a small browser extension that turns your Mail Cloud into a Pinterest.
+          It adds a save button to every image on the web — or you can save it via the context
+          menu — straight into Mail Cloud. Images can be sorted into categories and saved into
+          separate subfolders.
         </p>
       </div>
 
