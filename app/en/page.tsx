@@ -82,26 +82,28 @@ export default function Home() {
         <section className="mt-16">
           <h2 className="font-medium mb-1">Projects</h2>
 
-          <div className="space-y-2">
+          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {projects.map((project) => (
               <Link
                 key={project.href}
                 href={project.href}
-                className="-mx-3 flex items-center gap-4 rounded-xl px-3 py-3 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
+                className="flex flex-col rounded-2xl bg-white p-5 shadow-custom no-underline transition-shadow hover:shadow-custom-hover dark:bg-neutral-900"
               >
-                {project.image ? (
-                  <Image
-                    src={project.image}
-                    alt=""
-                    width={180}
-                    height={96}
-                    className="h-24 w-[180px] shrink-0 rounded-lg object-cover"
-                  />
-                ) : (
-                  <div className="h-24 w-[180px] shrink-0 rounded-lg bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800" />
-                )}
+                <div className="flex h-44 items-center justify-center">
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt=""
+                      width={360}
+                      height={192}
+                      className="aspect-[360/192] w-3/5 rounded-lg object-cover"
+                    />
+                  ) : (
+                    <div className="aspect-[360/192] w-3/5 rounded-lg bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800" />
+                  )}
+                </div>
                 <div>
-                  <h3 className="inline-block">{project.title} · {project.dates}</h3>
+                  <h3 className="inline-block">{project.title}</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">{project.description}</p>
                 </div>
               </Link>

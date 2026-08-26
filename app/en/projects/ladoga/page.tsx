@@ -30,12 +30,12 @@ export default function LadogaProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-12">
-        <p>
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
+        <p className="mb-4">
           A lightweight headless foundation for quickly building your own design systems for new
           and internal products.
         </p>
-        <p>
+        <p className="mb-4">
           VK already had a mature design system, VKUI, built primarily around VKontakte&apos;s needs
           and specifics. But not every smaller product or internal tool needed the full complexity,
           scale, and visual ties of a large ecosystem-wide system.
@@ -43,7 +43,7 @@ export default function LadogaProject() {
           We wanted to build a lightweight foundation that could be quickly adopted and extended
           whenever a project needed its own unique design system.
         </p>
-        <p>
+        <p className="mb-4">
           I joined Ladoga at an early stage, when the engineering team didn&apos;t yet have a
           dedicated designer. I took full ownership of the design side of the project, running it
           alongside my main role.
@@ -53,28 +53,36 @@ export default function LadogaProject() {
           parallel, three engineers from the VKUI team implemented the system in code. A dedicated
           designer joined the project later.
         </p>
-        <p>
+        <ZoomableImage
+          src="/projects/inside/Ladoga/components.png"
+          alt="Component list screenshot from Figma"
+          width={968}
+          height={512}
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-16 w-full h-auto"
+        />
+        <p className="mb-4">
           Ladoga wasn&apos;t designed for any specific interface. It was meant to become a universal
           foundation for products that didn&apos;t exist yet at the time.
 
           That meant clearly separating components&apos; functional behavior from their visual
           language, avoiding patterns tied to any single product.
         </p>
-        <p>
+        <p className="mb-4">
           Instead of user research, we analyzed existing approaches to designing design systems.
 
           We looked at:
 
-          Base UI — as an example of headless primitives;
-
-          shadcn/ui — as an approach to composable components;
-
-          VKUI — as an example of a mature product system.
+          <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
+            <li>Base UI — as an example of headless primitives;</li>
+            <li>shadcn/ui — as an approach to composable components;</li>
+            <li>VKUI — as an example of a mature product system.</li>
+          </ul>
 
           Our goal was to understand how lightweight, headless systems handle primitives,
           composition, and theming, and to rethink VKUI&apos;s component architecture.
         </p>
-        <p>
+        <p className="mb-4">
           Since Ladoga wasn&apos;t tied to a single product, its color system had to be flexible
           enough to support a wide range of visual languages.
 
@@ -88,7 +96,7 @@ export default function LadogaProject() {
           width={968}
           height={512}
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-3 w-full h-auto"
+          className="rounded-xl mt-3 mb-16 w-full h-auto"
         />
         <p>
           In three months we completed the first working version of Ladoga: a headless foundation
@@ -100,6 +108,14 @@ export default function LadogaProject() {
           The initiative was later put on hold after the engineering lead who had been driving the
           project left the company.
         </p>
+        <ZoomableImage
+          src="/projects/inside/Ladoga/button.png"
+          alt="Color system"
+          width={968}
+          height={512}
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-16 w-full h-auto"
+        />
         <p>
           Working on Ladoga reinforced a principle that matters to me: a design system doesn&apos;t
           need to solve every single product problem to be useful.

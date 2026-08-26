@@ -31,20 +31,27 @@ export default function CloudizerProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-12">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
         <p>
-          Cloudizer is a small browser extension that turns your Mail Cloud into a Pinterest.
-          It adds a save button to every image on the web — or you can save it via the context
-          menu — straight into Mail Cloud. Images can be sorted into categories and saved into
-          separate subfolders.
+          I used to actively rely on a similar extension for Yandex Disk and built up a large
+          collection of references there. When I needed the same kind of tool for Mail Cloud, I
+          decided to build it myself with the help of AI tools.
+        </p>
+        <h2 className="font-medium mb-1">Development process:</h2>
+        <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
+          <li>First prototypes in ChatGPT: the basic script already created a folder in Mail Cloud, but uploading images needed debugging. It also took extra work to overlay the save icon correctly on top of images on websites.</li>
+          <li>Refactoring and scaling with Claude Code: rewrote the code architecture and added new features.</li>
+        </ul>
+        <h2 className="font-medium mb-1">What the extension can do now:</h2>
+        <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
+          <li>Sorting by category: creating subfolders and choosing where to save.</li>
+          <li>Quick access: saving images straight from the right-click context menu.</li>
+        </ul>
+        <p>
+          The project keeps evolving. You can check out the current code and try the extension
+          in <Link href="https://github.com/Fliqle/Cloudizer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">the GitHub repository.</Link>
         </p>
       </div>
-
-      <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-12 px-4">
-        <li>Designed the concept and user scenarios from scratch.</li>
-        <li>Designed the extension&apos;s interface and visual language on my own.</li>
-        <li>Gathering feedback from early users and iterating on the product.</li>
-      </ul>
     </main>
   );
 }
