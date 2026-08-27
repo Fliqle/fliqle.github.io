@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import mailBanner from "../../../../public/Mail.png";
 
 export const metadata: Metadata = {
   title: "Mail — Valera Sirotkin",
@@ -20,7 +21,7 @@ export default function MailProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Mail</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2019–2026</p>
 
-      <ProjectBanner src="/Mail.png" alt="Mail" />
+      <ProjectBanner src={mailBanner} alt="Mail" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>

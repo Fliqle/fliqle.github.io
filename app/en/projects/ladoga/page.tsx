@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
 import { ZoomableImage } from "../../../zoomable-image";
+import ladogaMain from "../../../../public/projects/inside/Ladoga/main.png";
+import ladogaComponents from "../../../../public/projects/inside/Ladoga/components.png";
+import ladogaVariables from "../../../../public/projects/inside/Ladoga/variables.png";
+import ladogaButton from "../../../../public/projects/inside/Ladoga/button.png";
 
 export const metadata: Metadata = {
   title: "Ladoga UI — Valera Sirotkin",
@@ -21,7 +25,7 @@ export default function LadogaProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Ladoga UI</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2025</p>
 
-      <ProjectBanner src="/projects/inside/Ladoga/main.png" alt="Ladoga UI" />
+      <ProjectBanner src={ladogaMain} alt="Ladoga UI" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
@@ -54,10 +58,8 @@ export default function LadogaProject() {
           designer joined the project later.
         </p>
         <ZoomableImage
-          src="/projects/inside/Ladoga/components.png"
+          src={ladogaComponents}
           alt="Component list screenshot from Figma"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />
@@ -91,10 +93,8 @@ export default function LadogaProject() {
           ecosystem.
         </p>
         <ZoomableImage
-          src="/projects/inside/Ladoga/variables.png"
+          src={ladogaVariables}
           alt="Color system"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />
@@ -109,10 +109,8 @@ export default function LadogaProject() {
           project left the company.
         </p>
         <ZoomableImage
-          src="/projects/inside/Ladoga/button.png"
+          src={ladogaButton}
           alt="Color system"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import cloudizerBanner from "../../../../public/projects/inside/Cloudizer1.png";
 
 export const metadata: Metadata = {
   title: "Cloudizer — Valera Sirotkin",
@@ -20,7 +21,7 @@ export default function CloudizerProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Cloudizer</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2026 · personal project</p>
 
-      <ProjectBanner src="/projects/inside/Cloudizer1.png" alt="Cloudizer" />
+      <ProjectBanner src={cloudizerBanner} alt="Cloudizer" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>

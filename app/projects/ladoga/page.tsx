@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
 import { ZoomableImage } from "../../zoomable-image";
+import ladogaMain from "../../../public/projects/inside/Ladoga/main.png";
+import ladogaComponents from "../../../public/projects/inside/Ladoga/components.png";
+import ladogaVariables from "../../../public/projects/inside/Ladoga/variables.png";
+import ladogaButton from "../../../public/projects/inside/Ladoga/button.png";
 
 export const metadata: Metadata = {
   title: "Ladoga UI — Валера Сироткин",
@@ -21,7 +25,7 @@ export default function LadogaProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Ladoga UI</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2025</p>
 
-      <ProjectBanner src="/projects/inside/Ladoga/main.png" alt="Ladoga UI" />
+      <ProjectBanner src={ladogaMain} alt="Ladoga UI" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
@@ -45,10 +49,8 @@ export default function LadogaProject() {
           Я спроектировал архитектуру и принципы системы, разработал цветовую палитру и систему токенов, собрал Figma-библиотеку, создал компоненты и описал их спецификации. Параллельно три инженера из команды VKUI занимались реализацией системы в коде. Позже к проекту присоединился выделенный дизайнер.
         </p>
           <ZoomableImage
-          src="/projects/inside/Ladoga/components.png"
+          src={ladogaComponents}
           alt="Список компонентов скриншотом с Figma"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />
@@ -76,10 +78,8 @@ export default function LadogaProject() {
           Мы разработали несколько оттенков для каждого базового цвета, чтобы решение подошло большому количеству проектов, сохранив при этом фирменный синий цвет VK в качестве главного акцента для преемственности с экосистемой.
         </p>
         <ZoomableImage
-          src="/projects/inside/Ladoga/variables.png"
+          src={ladogaVariables}
           alt="Система цветов"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />
@@ -91,10 +91,8 @@ export default function LadogaProject() {
           Инициатива была приостановлена позже, после того как тимлид разработки, драйвивший проект, покинул компанию.
         </p>
                 <ZoomableImage
-          src="/projects/inside/Ladoga/button.png"
+          src={ladogaButton}
           alt="Система цветов"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />

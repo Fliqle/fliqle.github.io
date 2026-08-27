@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { useState } from "react";
 
-export function ProjectBanner({ src, alt }: { src: string | null; alt: string }) {
+export function ProjectBanner({ src, alt }: { src: StaticImageData | null; alt: string }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -18,8 +18,6 @@ export function ProjectBanner({ src, alt }: { src: string | null; alt: string })
           <Image
             src={src}
             alt={alt}
-            width={968}
-            height={512}
             sizes="(max-width: 692px) 100vw, 692px"
             className="rounded-xl mt-3 mb-6 w-full h-auto"
           />
@@ -37,8 +35,6 @@ export function ProjectBanner({ src, alt }: { src: string | null; alt: string })
             <Image
               src={src}
               alt={alt}
-              width={1936}
-              height={1024}
               className="max-h-full max-w-full rounded-xl object-contain"
             />
           ) : (

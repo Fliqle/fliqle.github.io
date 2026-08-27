@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
+import paradigmBanner from "../../../public/projects/paradigm.png";
 
 export const metadata: Metadata = {
   title: "Дизайн-система Paradigm — Валера Сироткин",
@@ -20,7 +21,7 @@ export default function ParadigmProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Дизайн-система Paradigm</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2026</p>
 
-      <ProjectBanner src="/projects/paradigm.png" alt="Дизайн-система Paradigm" />
+      <ProjectBanner src={paradigmBanner} alt="Дизайн-система Paradigm" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>

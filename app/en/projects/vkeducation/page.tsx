@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
 import { ZoomableImage } from "../../../zoomable-image";
+import vkEducationBanner from "../../../../public/projects/inside/Education/DN-109.jpg";
+import vkEducationFigma from "../../../../public/projects/inside/Education/figma-education.png";
 
 export const metadata: Metadata = {
   title: "VK Education — Valera Sirotkin",
@@ -21,7 +23,7 @@ export default function VkEducationProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">VK Education</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2026</p>
 
-      <ProjectBanner src="/projects/inside/Education/DN-109.jpg" alt="VK Education" />
+      <ProjectBanner src={vkEducationBanner} alt="VK Education" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
@@ -54,10 +56,8 @@ export default function VkEducationProject() {
           Instead of learning the tool for its own sake, we build an interface step by step: from simple primitives to components, and then from components to full pages. This approach helps students see design as a system rather than just a set of visual choices.
         </p>
         <ZoomableImage
-          src="/projects/inside/Education/figma-education.png"
+          src={vkEducationFigma}
           alt="Screenshot of a component list from Figma"
-          width={968}
-          height={512}
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
