@@ -43,7 +43,7 @@ export default function CloudizerProject() {
           <li>Быстрый доступ: сохранение изображений прямо из контекстного меню по правой кнопке мыши.</li>
         </ul>
         <p>
-          Проект продолжает развиваться. Ознакомиться с текущим кодом и протестировать расширение можно <Link href="https://github.com/Fliqle/Cloudizer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">в репозитории на GitHub.</Link> 
+          Проект продолжает развиваться. Ознакомиться с текущим кодом и протестировать расширение можно <Link href="https://github.com/Fliqle/Cloudizer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">в репозитории на GitHub.</Link>
         </p>
       </div>
     </main>
