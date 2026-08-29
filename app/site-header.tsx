@@ -25,7 +25,7 @@ export function SiteHeader() {
     <header className="mx-auto flex max-w-[692px] items-center gap-4 px-6 py-4 sm:py-4 md:py-16">
       <Link href={homeHref} className="shrink-0">
         <Image
-          src="/avatar.png"
+          src="/avatar.webp"
           alt={isEn ? "Valera Sirotkin's avatar" : "Аватар Валеры Сироткина"}
           width={80}
           height={80}

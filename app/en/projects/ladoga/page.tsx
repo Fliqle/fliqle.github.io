@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
 import { ZoomableImage } from "../../../zoomable-image";
-import ladogaMain from "../../../../public/projects/inside/Ladoga/main.png";
-import ladogaComponents from "../../../../public/projects/inside/Ladoga/components.png";
-import ladogaVariables from "../../../../public/projects/inside/Ladoga/variables.png";
-import ladogaButton from "../../../../public/projects/inside/Ladoga/button.png";
+import ladogaMain from "../../../../public/projects/inside/Ladoga/main.webp";
+import ladogaComponents from "../../../../public/projects/inside/Ladoga/components.webp";
+import ladogaVariables from "../../../../public/projects/inside/Ladoga/variables.webp";
+import ladogaButton from "../../../../public/projects/inside/Ladoga/button.webp";
 
 export const metadata: Metadata = {
   title: "Ladoga UI — Valera Sirotkin",

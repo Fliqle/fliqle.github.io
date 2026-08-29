@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
 import { ZoomableImage } from "../../../zoomable-image";
-import vkEducationBanner from "../../../../public/projects/inside/Education/DN-109.jpg";
-import vkEducationFigma from "../../../../public/projects/inside/Education/figma-education.png";
+import vkEducationBanner from "../../../../public/projects/inside/Education/DN-109.webp";
+import vkEducationFigma from "../../../../public/projects/inside/Education/figma-education.webp";
 
 export const metadata: Metadata = {
   title: "VK Education — Valera Sirotkin",

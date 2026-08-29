@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
-import cloudizerBanner from "../../../public/projects/inside/Cloudizer1.png";
+import cloudizerBanner from "../../../public/projects/inside/Cloudizer1.webp";
 
 export const metadata: Metadata = {
   title: "Cloudizer — Валера Сироткин",
