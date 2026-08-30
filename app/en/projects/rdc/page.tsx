@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import RDCbanner from "../../../../public/projects/inside/rdc/eUDrPv_L4LMGvDPzFp2CTBctUZbNen1w-XeS_hvcyy7q2NN1Dydem0BlroM8hfHje01dZE1tMTp9yOk8fqJRiYkp.webp";
+import rdc1 from "../../../../public/projects/inside/rdc/Slide 4.webp";
+import rdc2 from "../../../../public/projects/inside/rdc/Slide 5.webp";
+import rdc3 from "../../../../public/projects/inside/rdc/Slide 6.webp";
+import { ZoomableImage } from "../../../zoomable-image";
 
 export const metadata: Metadata = {
   title: "Russian Design Cup — Valera Sirotkin",
@@ -20,20 +25,70 @@ export default function RdcProject() {
       <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Russian Design Cup</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2026</p>
 
-      <ProjectBanner src={null} alt="Russian Design Cup" />
+      <ProjectBanner src={RDCbanner} alt="Russian Design Cup" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
-          Russian Design Cup is the largest design competition in Russia. For several years I&apos;ve
-          taken part in organizing and judging the competition, as well as speaking in the finals.
+          Russian Design Cup is a design competition that has been running for 15 years.
+          I&apos;ve been helping organize it since 2020.
         </p>
       </div>
-
-      <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-12 px-4">
-        <li>Took part in organizing the competition and judging entries.</li>
-        <li>Gave talks at the competition finals.</li>
-        <li>Helped shape the judging criteria and challenge structure.</li>
-      </ul>
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
+      <p className="mb-4">
+        Over the years my role changed a lot: from PR and email campaigns to running the competition end to end. In recent years, together with Pasha Karpov, we were the main drivers of RDC inside VK, responsible for everything from the concept and budget to the jury, platform, communications, and the final.
+      </p>
+              <ZoomableImage
+          src={rdc1}
+          alt="Slide from the Russian Design Cup presentation showing the start of the competition"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+      <h2 className="font-medium mb-1">What I did</h2>
+      <h3 className="font-medium mb-1">PR and communications</h3>
+      <p className="mb-4">
+        I started on the promotional side: handling email campaigns, PR, and communication with participants. I helped draw attention to the competition and keep people engaged through every stage.
+      </p>
+      <h3 className="font-medium mb-1">Running the competition</h3>
+      <p className="mb-4">
+        Together with Pasha, I was responsible for running the entire competition: planning, coordinating teams and contractors, timelines, budget, and general organizational issues.
+      </p>
+                    <ZoomableImage
+          src={rdc2}
+          alt="Slide from the Russian Design Cup presentation showing the start of the competition"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+      <h3 className="font-medium mb-1">Budget</h3>
+      <p className="mb-4">
+        Helped put together the competition&apos;s overall budget, bringing together budgets from different areas.
+      </p>
+      <h3 className="font-medium mb-1">Landing page</h3>
+      <p className="mb-4">
+        Organized the move of the main landing page to a website builder. This removed the need to constantly involve developers: I could make most changes myself, which noticeably sped up releasing updates.
+      </p>
+                    <ZoomableImage
+          src={rdc3}
+          alt="Slide from the Russian Design Cup presentation showing the start of the competition"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+      <h3 className="font-medium mb-1">Jury</h3>
+      <p className="mb-4">
+        Organized the jury&apos;s work, arranged for experts to take part in the competition and the final, and coordinated the judging of entries. I also took part in judging myself.
+      </p>
+      <h3 className="font-medium mb-1">Platforms</h3>
+      <p className="mb-4">
+        Negotiated with the platforms hosting the competition. During my time on the project, RDC has run on Studio by PROSTOR — a VKontakte mini app — and, since 2026, on Dprofile.
+      </p>
+      <h3 className="font-medium mb-1">Final and broadcasts</h3>
+      <p className="mb-4">
+        Took part in preparing and running the online broadcasts and hosted the final on behalf of the organizers. Helped organize the offline final and coordinate the finalists.
+      </p>
+      <h3 className="font-medium mb-1">Content and promotion</h3>
+      <p className="mb-4">
+        Created creatives, wrote copy, and prepared materials to promote the competition. Depending on the task, I combined the roles of organizer, designer, copywriter, developer, and host.
+      </p>
+    </div>
     </main>
   );
 }
