@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
-import paradigmBanner from "../../../../public/projects/paradigm.png";
+import paradigmBanner from "../../../../public/projects/paradigm2.webp";
 
 export const metadata: Metadata = {
   title: "Paradigm Design System — Valera Sirotkin",
@@ -13,7 +13,7 @@ export default function ParadigmProject() {
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
       <Link
         href="/en"
-        className="rounded-full border border-gray-300 px-2 py-0.5 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
+        className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
       >
         Back home
       </Link>
