@@ -16,20 +16,20 @@ const projects = [
     description: "Единая дизайн-система для B2B и B2C продуктов Mail и VK Workspace: токены, библиотеки компонентов, процессы.",
     image: "/projects/paradigm.png",
   },
-    {
+  {
     href: "/projects/vkui",
     title: "Дизайн-система VKUI",
     dates: "2021–2024",
     description: "Единая дизайн-система VK: токены, библиотеки компонентов",
     image: "/projects/vkui.png",
   },
-    {
+  {
     href: "/projects/vkdobro",
     title: "VK Добро",
     dates: "2022–2023",
     description: "Благотворительный проект VK. Помогал с ребрендингом проекта и переводом на общую дизайн-систему",
     image: "/projects/vkdobro.png",
-  },      
+  },
   {
     href: "/projects/rdc",
     title: "Russian Design Cup",
@@ -37,7 +37,7 @@ const projects = [
     description: "Самый масштабный конкурс для дизайнеров в России",
     image: "/projects/rdc.png",
   },
-    {
+  {
     href: "/projects/vkeducation",
     title: "VK Education",
     dates: "2021–2026",
@@ -51,7 +51,7 @@ const projects = [
     description: "Личный проект — приложение для браузера, которое делает из Облака Mail аналог Pinterest",
     image: "/projects/cloudizer.png",
   },
-    {
+  {
     href: "/projects/ladoga",
     title: "Ladoga UI",
     dates: "2025",
@@ -120,6 +120,19 @@ export default function Home() {
           <h2 className="font-medium mb-1">Выступления</h2>
 
           <div className="space-y-2">
+            <a
+              href="https://vkvideo.ru/video-60345511_456239051"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
+            >
+              <h3 className="inline-block">Октябрь 2025 · Russian Design Cup 2025 Финал</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Был ведущим финала RDC, представлял участников, модерировал работу жюри
+              </p>
+            </a>
+
+
             <a
               href="https://vk.com/video_ext.php?oid=-152990965&id=456239715&hd=2"
               target="_blank"
