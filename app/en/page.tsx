@@ -73,7 +73,7 @@ export default function Home() {
       <h1 className="sr-only">Valera Sirotkin — product designer and design leader</h1>
       {/* Now */}
       <section className="max-w-4xl mx-auto py-16">
-        <p className="mb-2">I&apos;m a designer with more than 15 years of experience — I love simple solutions backed by serious work. I currently work at VK on Mail products: I started with systemic product interfaces, and now lead the Mail design direction and the Paradigm design system. I&apos;ve taken part in major redesigns, rebrandings, and helped build VKUI — VK&apos;s core design system.</p>
+        <p className="mb-2">I&apos;m a designer with more than 15 years of experience — I love simple solutions backed by serious work. I worked at VK on Mail products: started with systemic product interfaces and grew into leading the Mail design direction and the Paradigm design system. I took part in major redesigns and rebrandings, and helped develop and grow VKUI — VK&apos;s core design system.</p>
         <span>
           You can read more about my work as a designer <Link href="/en/about" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">here</Link>
         </span>

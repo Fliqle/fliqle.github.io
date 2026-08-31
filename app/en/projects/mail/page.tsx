@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ZoomableImage } from "@/app/zoomable-image";
 import mailBanner from "../../../../public/Mail.png";
+import mailspeed from "../../../../public/projects/inside/mail/mail-speed.webp";
+import mailmailings from "../../../../public/projects/inside/mail/mail-mailings.webp";
+import mailpayments from "../../../../public/projects/inside/mail/mail-payments.webp";
+import mailportal from "../../../../public/projects/inside/mail/mail-portal.webp";
+import mailrebrand from "../../../../public/projects/inside/mail/mail-rebrand.webp";
+import mailrebrand2 from "../../../../public/projects/inside/mail/mail-rebrand2.webp";
 
 export const metadata: Metadata = {
   title: "Mail — Valera Sirotkin",
@@ -46,6 +53,13 @@ export default function MailProject() {
         One of the first systemic tasks was updating the navigation and the &laquo;All projects&raquo; dropdown menu — at the time, different products and business lines handled the same scenarios differently. I reworked the navigation structure and core interactions, helped roll the new approach out to other business lines, and in parallel started working on the idea of unified navigation and a shared user profile as a common entry point across products. This was one of the first tasks where I had to look at an interface not as part of a single product, but as a shared experience across several services.
       </p>
 
+      <ZoomableImage
+        src={mailportal}
+        alt="Portal navigation and the new dropdown menu"
+        sizes="(max-width: 692px) 100vw, 692px"
+        className="rounded-xl mt-3 mb-12 w-full h-auto"
+      />
+
       <h3 className="font-medium mb-1 mt-6">Mail settings</h3>
       <p className="mb-6">
         Another major systemic task was redesigning the settings page. Over time it had accumulated a large number of parameters and scenarios — the job wasn&apos;t just to change how the page looked, but to rebuild its structure and make the settings easier to understand and find. I reworked the information architecture and interface and gradually brought it to the structure that&apos;s now the basis of Mail&apos;s current settings experience.
@@ -59,6 +73,13 @@ export default function MailProject() {
         The new section let users pay for services, manage recurring payments, and keep a history of transactions. At launch, it supported paying thousands of companies and covered several categories of everyday payments. I designed the section from scratch: its structure, core scenarios, and user flows — one of the few projects where I got to go all the way from the idea for a new product section to a finished user experience.
       </p>
 
+      <ZoomableImage
+        src={mailpayments}
+        alt="Payments hub promo"
+        sizes="(max-width: 692px) 100vw, 692px"
+        className="rounded-xl mt-3 mb-12 w-full h-auto"
+      />
+
       <h3 className="font-medium mb-1 mt-6">Rebrand and product updates</h3>
       <p className="mb-6">
         During the same period I was actively involved in the company&apos;s rebrand: the new visual identity had to be quickly carried over to existing digital products, including a large number of internal interfaces. I redesigned Mail&apos;s interfaces and adapted existing products to the new visual language — often under very tight deadlines, when instead of a full redesign I had to quickly bring an existing interface up to the new brand principles: updating typography, colors, components, and other visual elements while keeping existing scenarios working.
@@ -67,10 +88,24 @@ export default function MailProject() {
         This experience later strongly shaped how I approach design systems: when you have to manually carry the same visual language across a large number of products, it becomes especially clear which decisions truly need to be systemic.
       </p>
 
+      <ZoomableImage
+        src={mailrebrand}
+        alt="Rebrand of all Mail products"
+        sizes="(max-width: 692px) 100vw, 692px"
+        className="rounded-xl mt-3 mb-12 w-full h-auto"
+      />
+
       <h3 className="font-medium mb-1 mt-6">From guideline to tool</h3>
       <p className="mb-6">
         Another task grew out of a fairly simple problem: email newsletter designs were produced regularly, but there was no single approach to their visual structure. I put together a guideline for newsletter design and, together with the development team, helped build a tool that made assembling email designs significantly faster. The tool was later integrated into the existing &laquo;Рассыльщик&raquo; mailing tool — so the rules from the guideline ended up not just in documentation, but directly in the workflow, and the team no longer had to solve the newsletter design problem from scratch every time.
       </p>
+
+      <ZoomableImage
+        src={mailmailings}
+        alt="VK rebrand"
+        sizes="(max-width: 692px) 100vw, 692px"
+        className="rounded-xl mt-3 mb-12 w-full h-auto"
+      />
 
       <h2 className="font-medium mb-1 mt-10">2021–2025: from individual products to systems</h2>
       <p className="mb-6">
@@ -82,6 +117,13 @@ export default function MailProject() {
         As part of the rebrand, the company moved to new fonts and a new typographic system. I worked on integrating the new typography into Mail&apos;s products and helped migrate existing interfaces to the new approach — this included not just defining rules for how the font was used within interfaces, but also working with outside vendors and specialists who were refining the font for product scenarios. It meant accounting for a large number of existing products, platforms, and interfaces while still keeping a single visual language.
       </p>
 
+      <ZoomableImage
+        src={mailrebrand2}
+        alt="Rebrand of all Mail products"
+        sizes="(max-width: 692px) 100vw, 692px"
+        className="rounded-xl mt-3 mb-12 w-full h-auto"
+      />
+
       <h3 className="font-medium mb-1 mt-6">Cutting app launch time by 30%</h3>
       <p className="mb-6">
         One of the tasks I worked on during this period was app launch speed. I decided to look at the problem not just from a technical angle, but also from what the user sees in the first seconds after opening the app: I studied our existing launch process, looked at how competitors solved similar problems, and broke down the interface states during loading. Along the way I also found an existing Python script that could speed up part of the process — we turned what we found into concrete engineering tasks and worked with engineers on optimizing the launch.
@@ -89,6 +131,13 @@ export default function MailProject() {
       <p className="mb-6">
         The work ran on two tracks at once: technical optimization and improving how the app communicates the loading process to the user — including work on the loader and skeleton states. As a result, we managed to <strong>cut app launch time by roughly 30%</strong>.
       </p>
+
+      <ZoomableImage
+        src={mailspeed}
+        alt="Rebrand of all Mail products"
+        sizes="(max-width: 692px) 100vw, 692px"
+        className="rounded-xl mt-3 mb-12 w-full h-auto"
+      />
 
       <h3 className="font-medium mb-1 mt-6">Helping users understand where a newsletter came from</h3>
       <p className="mb-6">
