@@ -12,7 +12,7 @@ const projects = [
   {
     href: "/projects/paradigm",
     title: "Дизайн-система Paradigm",
-    dates: "2021–2026",
+    dates: "2019–2026",
     description: "Единая дизайн-система для B2B и B2C продуктов Mail и VK Workspace: токены, библиотеки компонентов, процессы.",
     image: "/projects/paradigm.png",
   },
