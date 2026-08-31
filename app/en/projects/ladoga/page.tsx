@@ -22,7 +22,7 @@ export default function LadogaProject() {
         Back home
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Ladoga UI</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Ladoga UI</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2025</p>
 
       <ProjectBanner src={ladogaMain} alt="Ladoga UI" />
@@ -34,12 +34,12 @@ export default function LadogaProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
-        <p className="mb-4">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
+        <p className="mb-6">
           A lightweight headless foundation for quickly building your own design systems for new
           and internal products.
         </p>
-        <p className="mb-4">
+        <p className="mb-6">
           VK already had a mature design system, VKUI, built primarily around VKontakte&apos;s needs
           and specifics. But not every smaller product or internal tool needed the full complexity,
           scale, and visual ties of a large ecosystem-wide system.
@@ -47,7 +47,7 @@ export default function LadogaProject() {
           We wanted to build a lightweight foundation that could be quickly adopted and extended
           whenever a project needed its own unique design system.
         </p>
-        <p className="mb-4">
+        <p className="mb-6">
           I joined Ladoga at an early stage, when the engineering team didn&apos;t yet have a
           dedicated designer. I took full ownership of the design side of the project, running it
           alongside my main role.
@@ -63,14 +63,14 @@ export default function LadogaProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-16 w-full h-auto"
         />
-        <p className="mb-4">
+        <p className="mb-6">
           Ladoga wasn&apos;t designed for any specific interface. It was meant to become a universal
           foundation for products that didn&apos;t exist yet at the time.
 
           That meant clearly separating components&apos; functional behavior from their visual
           language, avoiding patterns tied to any single product.
         </p>
-        <p className="mb-4">
+        <p className="mb-6">
           Instead of user research, we analyzed existing approaches to designing design systems.
 
           We looked at:
@@ -84,7 +84,7 @@ export default function LadogaProject() {
           Our goal was to understand how lightweight, headless systems handle primitives,
           composition, and theming, and to rethink VKUI&apos;s component architecture.
         </p>
-        <p className="mb-4">
+        <p className="mb-6">
           Since Ladoga wasn&apos;t tied to a single product, its color system had to be flexible
           enough to support a wide range of visual languages.
 

@@ -22,7 +22,7 @@ export default function About() {
           <div className="w-2 h-2 bg-gray-400 rounded-full absolute left-[-4px] top-4 hidden sm:block"></div>
 
           {/* Заголовок */}
-          <h2 className="text-xl sm:text-3xl font-bold mb-2 mt-2 sm:mt-0">
+          <h2 className="text-lg sm:text-2xl font-medium mb-2 mt-2 sm:mt-0">
             VK
           </h2>
 
@@ -65,7 +65,7 @@ export default function About() {
           <div className="w-2 h-2 bg-gray-400 rounded-full absolute left-[-4px] top-4  hidden sm:block"></div>
 
           {/* Заголовок */}
-          <h2 className="text-xl sm:text-3xl font-bold mb-2 mt-2 sm:mt-0">
+          <h2 className="text-lg sm:text-2xl font-medium mb-2 mt-2 sm:mt-0">
             VK
           </h2>
 
@@ -107,7 +107,7 @@ export default function About() {
           <div className="w-2 h-2 bg-gray-400 rounded-full absolute left-[-4px] top-4  hidden sm:block"></div>
 
           {/* Заголовок */}
-          <h2 className="text-xl sm:text-3xl font-bold mb-2 mt-2 sm:mt-0">
+          <h2 className="text-lg sm:text-2xl font-medium mb-2 mt-2 sm:mt-0">
             Mail.ru Group
           </h2>
 
@@ -151,7 +151,7 @@ export default function About() {
           <div className="w-2 h-2 bg-gray-400 rounded-full absolute left-[-4px] top-4 hidden sm:block"></div>
 
           {/* Заголовок */}
-          <h2 className="text-xl sm:text-3xl font-bold mb-2 mt-2 sm:mt-0">
+          <h2 className="text-lg sm:text-2xl font-medium mb-2 mt-2 sm:mt-0">
             Компания «Тензор»
           </h2>
 

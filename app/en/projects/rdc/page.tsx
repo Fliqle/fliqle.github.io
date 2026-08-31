@@ -22,7 +22,7 @@ export default function RdcProject() {
         Back home
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Russian Design Cup</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Russian Design Cup</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2026</p>
 
       <ProjectBanner src={RDCbanner} alt="Russian Design Cup" />
@@ -33,8 +33,8 @@ export default function RdcProject() {
           I&apos;ve been helping organize it since 2020.
         </p>
       </div>
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
-      <p className="mb-4">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
+      <p className="mb-6">
         Over the years my role changed a lot: from PR and email campaigns to running the competition end to end. In recent years, together with Pasha Karpov, we were the main drivers of RDC inside VK, responsible for everything from the concept and budget to the jury, platform, communications, and the final.
       </p>
               <ZoomableImage
@@ -43,13 +43,13 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h2 className="font-medium mb-1">What I did</h2>
-      <h3 className="font-medium mb-1">PR and communications</h3>
-      <p className="mb-4">
+      <h2 className="font-medium mb-1 mt-10">What I did</h2>
+      <h3 className="font-medium mb-1 mt-6">PR and communications</h3>
+      <p className="mb-6">
         I started on the promotional side: handling email campaigns, PR, and communication with participants. I helped draw attention to the competition and keep people engaged through every stage.
       </p>
-      <h3 className="font-medium mb-1">Running the competition</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Running the competition</h3>
+      <p className="mb-6">
         Together with Pasha, I was responsible for running the entire competition: planning, coordinating teams and contractors, timelines, budget, and general organizational issues.
       </p>
                     <ZoomableImage
@@ -58,12 +58,12 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h3 className="font-medium mb-1">Budget</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Budget</h3>
+      <p className="mb-6">
         Helped put together the competition&apos;s overall budget, bringing together budgets from different areas.
       </p>
-      <h3 className="font-medium mb-1">Landing page</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Landing page</h3>
+      <p className="mb-6">
         Organized the move of the main landing page to a website builder. This removed the need to constantly involve developers: I could make most changes myself, which noticeably sped up releasing updates.
       </p>
                     <ZoomableImage
@@ -72,20 +72,20 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h3 className="font-medium mb-1">Jury</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Jury</h3>
+      <p className="mb-6">
         Organized the jury&apos;s work, arranged for experts to take part in the competition and the final, and coordinated the judging of entries. I also took part in judging myself.
       </p>
-      <h3 className="font-medium mb-1">Platforms</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Platforms</h3>
+      <p className="mb-6">
         Negotiated with the platforms hosting the competition. During my time on the project, RDC has run on Studio by PROSTOR — a VKontakte mini app — and, since 2026, on Dprofile.
       </p>
-      <h3 className="font-medium mb-1">Final and broadcasts</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Final and broadcasts</h3>
+      <p className="mb-6">
         Took part in preparing and running the online broadcasts and hosted the final on behalf of the organizers. Helped organize the offline final and coordinate the finalists.
       </p>
-      <h3 className="font-medium mb-1">Content and promotion</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Content and promotion</h3>
+      <p className="mb-6">
         Created creatives, wrote copy, and prepared materials to promote the competition. Depending on the task, I combined the roles of organizer, designer, copywriter, developer, and host.
       </p>
     </div>

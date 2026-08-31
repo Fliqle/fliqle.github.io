@@ -18,7 +18,7 @@ export default function CloudizerProject() {
         Back home
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Cloudizer</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Cloudizer</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2026 · personal project</p>
 
       <ProjectBanner src={cloudizerBanner} alt="Cloudizer" />
@@ -32,18 +32,18 @@ export default function CloudizerProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
         <p>
           I used to actively rely on a similar extension for Yandex Disk and built up a large
           collection of references there. When I needed the same kind of tool for Mail Cloud, I
           decided to build it myself with the help of AI tools.
         </p>
-        <h2 className="font-medium mb-1">Development process:</h2>
+        <h2 className="font-medium mb-1 mt-10">Development process:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>First prototypes in ChatGPT: the basic script already created a folder in Mail Cloud, but uploading images needed debugging. It also took extra work to overlay the save icon correctly on top of images on websites.</li>
           <li>Refactoring and scaling with Claude Code: rewrote the code architecture and added new features.</li>
         </ul>
-        <h2 className="font-medium mb-1">What the extension can do now:</h2>
+        <h2 className="font-medium mb-1 mt-10">What the extension can do now:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>Sorting by category: creating subfolders and choosing where to save.</li>
           <li>Quick access: saving images straight from the right-click context menu.</li>

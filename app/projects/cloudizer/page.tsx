@@ -18,7 +18,7 @@ export default function CloudizerProject() {
         На главную
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Cloudizer</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Cloudizer</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2026 · личный проект</p>
 
       <ProjectBanner src={cloudizerBanner} alt="Cloudizer" />
@@ -29,16 +29,16 @@ export default function CloudizerProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
         <p>
           Раньше я активно пользовался похожим расширением для Яндекс Диска и собрал большую коллекцию референсов. Когда мне потребовался аналогичный инструмент для Облака Mail, я решил создать его самостоятельно с помощью AI-инструментов.
         </p>
-        <h2 className="font-medium mb-1">Процесс разработки:</h2>
+        <h2 className="font-medium mb-1 mt-10">Процесс разработки:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>Первые прототипы на ChatGPT: базовый скрипт уже создавал папку в Облаке, но загрузка изображений требовала отладки. Дополнительно пришлось потрудиться над версткой иконки поверх иллюстраций на сайтах.</li>
           <li>Рефакторинг и масштабирование с Claude Code: переписал архитектуру кода и добавил новые функции.</li>
         </ul>
-        <h2 className="font-medium mb-1">Что умеет расширение сейчас:</h2>
+        <h2 className="font-medium mb-1 mt-10">Что умеет расширение сейчас:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>Сортировка по категориям: создание подпапок и выбор места сохранения.</li>
           <li>Быстрый доступ: сохранение изображений прямо из контекстного меню по правой кнопке мыши.</li>

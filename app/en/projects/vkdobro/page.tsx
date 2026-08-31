@@ -23,7 +23,7 @@ export default function VkDobroProject() {
         Back home
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">VK Dobro</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">VK Dobro</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2022–2023</p>
 
       <ProjectBanner src={dobrobanner} alt="VK Dobro" />
@@ -35,8 +35,8 @@ export default function VkDobroProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
-      <p className="mb-4">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
+      <p className="mb-6">
           VK Dobro (formerly Dobro Mail) is a major social service and charity platform within the VK ecosystem. I joined the project during a period of crisis management, when the product team was left without designers right in the middle of a large-scale rebrand.
       </p>
       <ZoomableImage
@@ -45,11 +45,11 @@ export default function VkDobroProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <p className="mb-4">
+      <p className="mb-6">
           The project had a tight deadline: it needed to go through a rebrand, move from Dobro Mail to VK Dobro, and migrate all interfaces to the ecosystem&apos;s shared visual language — VKUI — in a short amount of time.
       </p>
-      <h2 className="font-medium mb-1">Ecosystem and web platform</h2>
-      <p className="mb-4">
+      <h2 className="font-medium mb-1 mt-10">Ecosystem and web platform</h2>
+      <p className="mb-6">
           To keep the service running without interruption, I jumped straight into a hands-on design workflow and started the redesign with isolated content blocks:
       </p>
       <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-1 px-4">
@@ -71,8 +71,8 @@ export default function VkDobroProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
-      <h2 className="font-medium mb-1">Leadership and project handover</h2>
-      <p className="mb-4">
+      <h2 className="font-medium mb-1 mt-10">Leadership and project handover</h2>
+      <p className="mb-6">
           When the team got an open headcount for a product designer, I got actively involved in the hiring process:
       </p>
       <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">

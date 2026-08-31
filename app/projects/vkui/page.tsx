@@ -17,7 +17,7 @@ export default function VkuiProject() {
         На главную
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Дизайн-система VKUI</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Дизайн-система VKUI</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2024</p>
 
       <ProjectBanner src={null} alt="Дизайн-система VKUI" />

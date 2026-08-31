@@ -22,7 +22,7 @@ export default function RdcProject() {
         На главную
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">Russian Design Cup</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Russian Design Cup</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2026</p>
 
       <ProjectBanner src={RDCbanner} alt="Russian Design Cup" />
@@ -32,8 +32,8 @@ export default function RdcProject() {
           Russian Design Cup — конкурс для дизайнеров, который существует уже 15 лет. Я помогаю организовывать его с 2020 года.
         </p>
       </div>
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
-      <p className="mb-4">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
+      <p className="mb-6">
         За это время моя роль сильно изменилась: от PR и рассылок до полноценной организации конкурса. Последние годы вместе с Пашей Карповым мы были основными драйверами RDC внутри VK и отвечали за проведение конкурса от идеи и бюджета до жюри, платформы, коммуникаций и финала.
       </p>
               <ZoomableImage
@@ -42,13 +42,13 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h2 className="font-medium mb-1">Что я делал</h2>
-      <h3 className="font-medium mb-1">PR и коммуникации</h3>
-      <p className="mb-4">
+      <h2 className="font-medium mb-1 mt-10">Что я делал</h2>
+      <h3 className="font-medium mb-1 mt-6">PR и коммуникации</h3>
+      <p className="mb-6">
         Начинал с продвижения конкурса: занимался рассылками, PR и коммуникацией с участниками. Помогал привлекать внимание к конкурсу и поддерживать интерес на протяжении всех этапов.
       </p>
-      <h3 className="font-medium mb-1">Организация конкурса</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Организация конкурса</h3>
+      <p className="mb-6">
         Вместе с Пашей отвечал за проведение конкурса целиком: планирование, координацию команд и подрядчиков, сроки, бюджет и решение организационных вопросов.
       </p>
                     <ZoomableImage
@@ -57,12 +57,12 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h3 className="font-medium mb-1">Бюджет</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Бюджет</h3>
+      <p className="mb-6">
         Помогал собирать общий бюджет конкурса и объединять в нём бюджеты разных направлений.
       </p>
-      <h3 className="font-medium mb-1">Лендинг</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Лендинг</h3>
+      <p className="mb-6">
         Организовал переезд основного лендинга на конструктор сайтов. Это позволило отказаться от постоянного привлечения разработчиков: теперь большинство изменений я мог делать самостоятельно, что заметно ускорило выпуск обновлений.
       </p>
                     <ZoomableImage
@@ -71,20 +71,20 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h3 className="font-medium mb-1">Жюри</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Жюри</h3>
+      <p className="mb-6">
         Организовывал работу жюри, договаривался с экспертами об участии в конкурсе и финале, координировал оценку работ. Сам также участвовал в оценивании.
       </p>
-      <h3 className="font-medium mb-1">Платформы</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Платформы</h3>
+      <p className="mb-6">
         Вёл переговоры с платформами, на которых проходил конкурс. За время моей работы RDC проводился на Студии от ПРОСТОРа - мини-приложении ВКонтакте, а с 2026 года — на Dprofile.
       </p>
-      <h3 className="font-medium mb-1">Финал и трансляции</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Финал и трансляции</h3>
+      <p className="mb-6">
         Участвовал в подготовке и проведении онлайн-трансляций, был ведущим финала со стороны организаторов. Помогал организовывать офлайн-финал и координировать финалистов.
       </p>
-      <h3 className="font-medium mb-1">Контент и продвижение</h3>
-      <p className="mb-4">
+      <h3 className="font-medium mb-1 mt-6">Контент и продвижение</h3>
+      <p className="mb-6">
         Создавал креативы, писал тексты и готовил материалы для продвижения конкурса. В зависимости от задачи совмещал роли организатора, дизайнера, копирайтера, разработчика и ведущего.
       </p>
     </div>

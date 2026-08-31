@@ -23,7 +23,7 @@ export default function VkDobroProject() {
         На главную
       </Link>
 
-      <h1 className="text-xl sm:text-3xl font-bold mt-4 mb-1">VK Добро</h1>
+      <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">VK Добро</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2022–2023</p>
 
       <ProjectBanner src={dobrobanner} alt="VK Добро" />
@@ -35,8 +35,8 @@ export default function VkDobroProject() {
         </p>
       </div>
 
-      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48">
-      <p className="mb-4">
+      <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
+      <p className="mb-6">
           VK Добро (ранее — Добро Mail) — крупный социальный сервис и платформа для благотворительности внутри экосистемы VK. Мое подключение к проекту произошло в период кризисного менеджмента, когда продуктовая команда осталась без дизайнеров прямо в момент масштабного ребрендинга.
       </p>
       <ZoomableImage
@@ -45,11 +45,11 @@ export default function VkDobroProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <p className="mb-4">
+      <p className="mb-6">
           Перед проектом стоял жесткий дедлайн: нужно было в сжатые сроки провести ребрендинг, перейти от Добро Mail к VK Dobro и перевести все интерфейсы на единый визуальный язык экосистемы — VKUI.
       </p>
-      <h2 className="font-medium mb-1">Экосистема и веб-платформа</h2>
-      <p className="mb-4">
+      <h2 className="font-medium mb-1 mt-10">Экосистема и веб-платформа</h2>
+      <p className="mb-6">
           Чтобы не останавливать текущую работу сервиса, я сразу включился в формат hands-on дизайна и начал редизайн с изолированных контентных блоков:
       </p>
       <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-1 px-4">
@@ -71,8 +71,8 @@ export default function VkDobroProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
-      <h2 className="font-medium mb-1">Лидерство и передача проекта</h2>
-      <p className="mb-4">
+      <h2 className="font-medium mb-1 mt-10">Лидерство и передача проекта</h2>
+      <p className="mb-6">
           Когда у команды появилась открытая ставка на продуктового дизайнера, я активно подключился к выстраиванию найма:
       </p>
       <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
