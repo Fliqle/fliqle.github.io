@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ProjectLinks } from "../../../project-links";
 import { ArticleNav } from "../../../article-nav";
+import { ZoomableImage } from "../../../zoomable-image";
 import vkuiBanner from "../../../../public/projects/vkui2.webp";
+import vkui1 from "../../../../public/projects/inside/vkui/vkui1.png";
+import vkui2 from "../../../../public/projects/inside/vkui/vkui2.png";
+import vkui3 from "../../../../public/projects/inside/vkui/vkui3.png";
 
 export const metadata: Metadata = {
   title: "VKUI Design System — Valera Sirotkin",
@@ -15,7 +20,7 @@ export default function VkuiProject() {
       <ArticleNav
         sections={[
           { id: "context-merge", label: "Context and the push to merge" },
-          { id: "workshop", label: "A workshop at VKontakte's office: 4 days, 160 tokens" },
+          { id: "workshop", label: "Unifying the tokens" },
           { id: "components", label: "Building the components and a shared language (design × dev)" },
           { id: "scaling", label: "Scaling and rolling out to Mail products" },
           { id: "results", label: "Results" },
@@ -30,6 +35,13 @@ export default function VkuiProject() {
 
       <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">VKUI Design System</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2021–2024</p>
+
+      <ProjectLinks
+        links={[
+          { href: "https://vkcom.github.io/VKUI/", title: "Design system website", description: "VKUI documentation and guidelines" },
+          { href: "https://www.figma.com/@vk", title: "VKUI on Figma Community", description: "UI kit with ready-made components for designers" },
+        ]}
+      />
 
       <ProjectBanner src={vkuiBanner} alt="VKUI Design System" />
 
@@ -54,7 +66,7 @@ export default function VkuiProject() {
           Maintaining and developing two independent design systems in parallel demanded enormous frontend resources and created a visual gap whenever users moved between services. To fix both problems, we decided to merge the systems into one — making <strong>VKUI</strong> the company&apos;s core technical and component standard, and integrating <strong>Paradigm</strong> as one of its base themes.
         </p>
 
-        <h2 id="workshop" className="font-medium mb-1 mt-10">A workshop at VKontakte&apos;s office: 4 days, 160 tokens</h2>
+        <h2 id="workshop" className="font-medium mb-1 mt-10">Unifying the tokens</h2>
         <p className="mb-6">
           You can&apos;t merge two mature systems by decree in Jira. To reach common ground, we got together with VKontakte&apos;s development and design team at their office and started a complex process of joint alignment.
         </p>
@@ -67,6 +79,19 @@ export default function VkuiProject() {
         <p className="mb-6">
           I was trusted to put together <strong>the very first version of the library</strong> and fill it with colors. Together with Vanya Baryshev and Lesha Zaytsev from VKontakte, I designed the logic behind how tokens relate to each other, set the naming convention, and then wrote the documentation myself. That became the foundation for a shared token repository supporting both global themes (light/dark) and custom themes for individual products.
         </p>
+
+        <ZoomableImage
+          src={vkui1}
+          alt="Table comparing VKUI and Paradigm tokens during the sync"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+        <ZoomableImage
+          src={vkui2}
+          alt="Syncing button states and variants between 2kit and VKUI"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
 
         <h2 id="components" className="font-medium mb-1 mt-10">Building the components and a shared language (design × dev)</h2>
         <p className="mb-6">
@@ -95,7 +120,12 @@ export default function VkuiProject() {
         <p className="mb-6">
           The biggest upside of the new foundation was that Mail products got <strong>built-in responsiveness</strong> and <strong>automatic light/dark theme switching</strong> out of the box, with no need to write custom code for every screen. Throughout the process I acted as the connecting link, keeping up steady communication between the VKUI engineers and the Mail product teams.
         </p>
-
+        <ZoomableImage
+          src={vkui3}
+          alt="Documentation for syncing the color system and typography"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
         <h2 id="results" className="font-medium mb-1 mt-10">Results</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li><strong>Unified ecosystem:</strong> two isolated design systems turned into a single platform standard, available as Open Source and on Figma Community.</li>
@@ -103,9 +133,6 @@ export default function VkuiProject() {
           <li><strong>Faster development:</strong> Mail products gained flexible theming and a ready-made component base, meaningfully cutting time-to-market for new features.</li>
           <li><strong>Shared vocabulary:</strong> Mail and VK design and engineering teams aligned their terminology and interface-assembly processes.</li>
         </ul>
-        <p className="mb-6">
-          Key links: <Link href="https://vkcom.github.io/VKUI/" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">the official VKUI site</Link>, <Link href="https://github.com/VKCOM/vkui-tokens" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">the tokens repository</Link>, <Link href="https://github.com/VKCOM/VKUI" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">the components repository</Link>, <Link href="https://www.figma.com/@vkui" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">VKUI on Figma Community</Link>, and <Link href="https://www.figma.com/@paradigm" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">the Paradigm UI Kit on Figma Community</Link>.
-        </p>
       </div>
     </main>
   );
