@@ -13,21 +13,21 @@ const projects = [
     href: "/en/projects/mail",
     title: "Mail",
     dates: "2019–2026",
-    description: "Systemic product design: from mail client interfaces to the key user scenarios across all of Mail.",
+    description: "Worked on Mail's key user scenarios and led a team of designers",
     image: "/projects/mail.png",
   },
   {
     href: "/en/projects/paradigm",
     title: "Paradigm Design System",
     dates: "2019–2026",
-    description: "A unified design system for Mail and VK Workspace B2B and B2C products: tokens, component libraries, processes.",
+    description: "From a component library to token architecture, processes, and the team that maintains the system.",
     image: "/projects/paradigm.png",
   },
   {
     href: "/en/projects/vkui",
     title: "VKUI Design System",
     dates: "2021–2024",
-    description: "VK's core design system: tokens, component libraries.",
+    description: "Designed the token architecture and took part in merging Paradigm and VKUI into a shared systemic foundation for VK's products.",
     image: "/projects/vkui.png",
   },
   {
@@ -73,10 +73,25 @@ export default function Home() {
       <h1 className="sr-only">Valera Sirotkin — product designer and design leader</h1>
       {/* Now */}
       <section className="max-w-4xl mx-auto py-16">
-        <p className="mb-2">I&apos;m a designer with more than 15 years of experience — I love simple solutions backed by serious work. I worked at VK on Mail products: started with systemic product interfaces and grew into leading the Mail design direction and the Paradigm design system. I took part in major redesigns and rebrandings, and helped develop and grow VKUI — VK&apos;s core design system.</p>
-        <span>
-          You can read more about my work as a designer <Link href="/en/about" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">here</Link>
-        </span>
+        <p className="mb-2">15+ years in design. I&apos;ve worked with Mail and VK, grown the Paradigm and VKUI design systems, and in recent years led product design teams.</p>
+        <p className="mb-6">I help turn complex products and processes into clear systems — from a single user scenario to a design team.</p>
+        <h2 id="2019-2021" className="font-medium mb-1 mt-16">What I do</h2>
+        <h3 className="inline-block">Product Design</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Complex user scenarios, information architecture, product experiments.
+        </p>
+        <h3 className="inline-block mt-3">Design systems</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Architecture, tokens, components, theming, Figma ↔ code.
+        </p>
+        <h3 className="inline-block mt-3">Design leadership</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Teams, hiring, developing designers, processes, design quality.
+        </p>
+        <h3 className="inline-block mt-3">Design strategy</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Priorities, systemic change, aligning design and product.
+        </p>
 
         {/* Projects */}
         <section className="mt-16">

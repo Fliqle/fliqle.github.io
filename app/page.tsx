@@ -6,21 +6,21 @@ const projects = [
     href: "/projects/mail",
     title: "Почта Mail",
     dates: "2019–2026",
-    description: "Системный дизайн продукта: от интерфейсов почтового клиента до ключевых пользовательских сценариев всей Почты.",
+    description: "Работал над ключевыми пользовательскими сценариями Почты и руководил командой дизайнеров",
     image: "/projects/mail.png",
   },
   {
     href: "/projects/paradigm",
     title: "Дизайн-система Paradigm",
     dates: "2019–2026",
-    description: "Единая дизайн-система для B2B и B2C продуктов Mail и VK Workspace: токены, библиотеки компонентов, процессы.",
+    description: "От библиотеки компонентов до архитектуры токенов, процессов и команды, которая поддерживает систему.",
     image: "/projects/paradigm.png",
   },
   {
     href: "/projects/vkui",
     title: "Дизайн-система VKUI",
     dates: "2021–2024",
-    description: "Единая дизайн-система VK: токены, библиотеки компонентов",
+    description: "Спроектировал архитектуру токенов и участвовал в объединении Paradigm и VKUI в общий системный фундамент для продуктов VK.",
     image: "/projects/vkui.png",
   },
   {
@@ -66,21 +66,25 @@ export default function Home() {
       <h1 className="sr-only">Валера Сироткин — продуктовый дизайнер и дизайн-лидер</h1>
       {/* Сейчас */}
       <section className="max-w-4xl mx-auto py-16">
-        <p className="mb-2">Я дизайнер с опытом больше 15 лет — люблю простые решения, за которыми стоит большая работа. Работал в VK над продуктами Mail: начинал с системных продуктовых интерфейсов, дорос до руководителя направления дизайна Mail и дизайн-системы Paradigm. Участвовал в крупных редизайнах, ребрендингах. Участвовал в разработке и развитии VKUI — основной дизайн-системы VK.</p>
-        <span>
-          Подробнее узнать о моей работе дизайнера <Link href="/about" className="underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600">можно тут</Link>
-        </span>
-
-        {/* Заметки */}
-        {/*
-        <section className="max-w-4xl mx-auto py-16">
-          <h2 className="font-medium mb-1">Заметки</h2>
-          <div className="-mx-3 flex flex-col rounded-xl px-3 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800 sm:py-2">
-            <h3 className="inline-block">Цветовые пространства</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Что такое цвет и как устроены современные экраны</p>
-          </div>
-        </section>
-        */}
+        <p className="mb-2">15+ лет в дизайне. Работал с Mail и VK, развивал дизайн-системы Paradigm и VKUI, последние годы — руководил командами продуктовых дизайнеров.</p>
+        <p className="mb-6">Помогаю превращать сложные продукты и процессы в понятные системы — от пользовательского сценария до дизайн-команды.</p>
+        <h2 id="2019-2021" className="font-medium mb-1 mt-16">Чем я занимаюсь</h2>
+        <h3 className="inline-block">Product Design</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Сложные пользовательские сценарии, информационная архитектура, продуктовые эксперименты.
+        </p>
+                <h3 className="inline-block mt-3">Design-systems</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Архитектура, токены, компоненты, темизация, связь Figma ↔ code.
+        </p>
+                        <h3 className="inline-block mt-3">Design leadership</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Команды, найм, развитие дизайнеров, процессы, design quality.
+        </p>
+                        <h3 className="inline-block mt-3">Design strategy</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Приоритеты, системные изменения, синхронизация дизайна и продукта.
+        </p>
 
         {/* Проекты */}
         <section className="mt-16">

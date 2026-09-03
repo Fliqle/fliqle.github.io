@@ -17,6 +17,7 @@ export function SiteHeader() {
   }, [isEn]);
 
   const homeHref = isEn ? "/en" : "/";
+  const aboutHref = isEn ? "/en/about" : "/about";
   const switchHref = isEn
     ? pathname.replace(/^\/en/, "") || "/"
     : `/en${pathname === "/" ? "" : pathname}`;
@@ -48,11 +49,11 @@ export function SiteHeader() {
           {isEn ? "Product Designer · Design Leader" : "Продуктовый дизайнер · Дизайн-лидер"}
         </p>
         <div className="mt-2 flex items-center gap-3 text-base text-gray-500 dark:text-gray-400">
+          <Link href={aboutHref} className={linkClass}>
+            Work
+          </Link>
           <a href="https://www.linkedin.com/in/vsirotkin/" target="_blank" rel="noopener noreferrer" className={linkClass}>
             LinkedIn
-          </a>
-          <a href="https://vk.ru/fliqle" target="_blank" rel="noopener noreferrer" className={linkClass}>
-            VK
           </a>
           <a href="https://cloud.mail.ru/public/ovum/cvjPJQ5KB" target="_blank" rel="noopener noreferrer" className={linkClass}>
             Resume
