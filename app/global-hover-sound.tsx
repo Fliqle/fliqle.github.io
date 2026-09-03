@@ -20,7 +20,7 @@ import { useHoverSound } from "./hooks/useHoverSound";
  * div с onClick), добавь ему атрибут data-click-sound.
  */
 export function GlobalHoverSound() {
-  const playClick = useHoverSound("/sounds/hover.wav", { volume: 0.1 });
+  const playClick = useHoverSound("/Sounds/hover.wav", { volume: 0.1 });
 
   useEffect(() => {
     const SELECTOR = "a, button, [data-click-sound]";
