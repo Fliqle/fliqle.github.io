@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Опыт — Валера Сироткин",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <Link
+        href="/"
+        className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800 mb-12"
+      >
+        На главную
+      </Link>
       <h1 className="sr-only">Опыт</h1>
 
       <article className="md:flex">
@@ -55,7 +62,7 @@ export default function About() {
         </div>
       </article>
 
-            <article className="md:flex">
+      <article className="md:flex">
         {/* Дата слева */}
         <p className="min-w-[120px] mt-2 text-sm text-gray-500 dark:text-gray-400">2021–2025</p>
 

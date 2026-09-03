@@ -30,3 +30,21 @@ body {
   color: var(--foreground);
   font-family: Geist, Arial, Helvetica, sans-serif;
 }
+
+/* Лёгкое "нажатие" при клике на любую ссылку/кнопку сайта */
+a,
+button,
+[data-click-sound] {
+  transition: transform 150ms ease-out;
+}
+
+a:active,
+button:active,
+[data-click-sound]:active {
+  transform: scale(0.97);
+}
+
+/* Исключение для конкретных элементов, если где-то эффект не нужен */
+[data-no-click-scale] {
+  transform: none !important;
+}
