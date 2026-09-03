@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ProjectLinks } from "../../../project-links";
 import { ArticleNav } from "../../../article-nav";
+import { ZoomableImage } from "../../../zoomable-image";
 import paradigmBanner from "../../../../public/projects/paradigm2.webp";
+import paradigm1 from "../../../../public/projects/inside/paradigm/paradigm1.webp";
+import paradigm2 from "../../../../public/projects/inside/paradigm/paradigm2.webp";
+import paradigm3 from "../../../../public/projects/inside/paradigm/paradigm3.webp";
+import paradigm4 from "../../../../public/projects/inside/paradigm/paradigm4.webp";
+import paradigm5 from "../../../../public/projects/inside/paradigm/paradigm5.webp";
+import paradigm6 from "../../../../public/projects/inside/paradigm/paradigm6.webp";
 
 export const metadata: Metadata = {
   title: "Paradigm Design System — Valera Sirotkin",
@@ -39,6 +47,13 @@ export default function ParadigmProject() {
       <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Paradigm Design System</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2019–2026</p>
 
+      <ProjectLinks
+        links={[
+          { href: "https://paradigm.mail.ru/", title: "Paradigm website", description: "Documentation, guidelines, and Paradigm components" },
+          { href: "https://www.figma.com/@paradigm", title: "Paradigm on Figma Community", description: "UI kit with ready-made components for designers" },
+        ]}
+      />
+
       <ProjectBanner src={paradigmBanner} alt="Paradigm Design System" />
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
@@ -61,10 +76,32 @@ export default function ParadigmProject() {
           My first big systemic task was fully moving Paradigm out of Sketch files and into Figma. The job wasn&apos;t just to copy the components over, but to rebuild their structure from scratch using Figma&apos;s auto-layout, states, and variants. This created a single source of truth for all Mail and Cloud designers, sped up assembling mockups, and significantly narrowed the gap between design and engineering.
         </p>
 
+        <ZoomableImage
+          src={paradigm1}
+          alt="Cover of the Paradigm design system's UI kit archive"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
+
         <h3 id="core-components" className="font-medium mb-1 mt-6">Designing the core UI components</h3>
         <p className="mb-6">
           In parallel, I personally designed and built the key UI components: buttons, inputs, checkboxes, switches, modals, and cards. For each element I worked through the states, responsiveness, and wrote detailed technical documentation with usage rules. The UI kits I put together later became the foundation, and the VKUI and Paradigm libraries themselves were published on Figma Community as Open Source tools.
         </p>
+
+        <ZoomableImage
+          src={paradigm3}
+          alt="Paradigm's color token palette"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+
+        <ZoomableImage
+          src={paradigm2}
+          alt="Base component library: inputs, service logos, and avatars"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+
 
         <h2 id="2021-2023" className="font-medium mb-1 mt-10">2021–2023: scaling up — VKUI tokens and a unified knowledge base</h2>
         <p className="mb-6">
@@ -75,6 +112,14 @@ export default function ParadigmProject() {
         <p className="mb-6">
           In 2021 we merged the Paradigm design system with the company-wide VKUI system, where Paradigm became one of its two base themes. Together with the VKontakte team, I developed a new design token structure: designed the logic of how tokens relate to each other, the naming system, and personally wrote the technical documentation. We built a shared repository that supported light and dark themes and also gave products their own local themes, which made it possible to flexibly customize an app&apos;s visual language without a large-scale code rewrite.
         </p>
+
+
+        <ZoomableImage
+          src={paradigm4}
+          alt="Token architecture for the light and dark theme"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
 
         <h3 id="site-relaunch" className="font-medium mb-1 mt-6">Relaunching the Paradigm website</h3>
         <p className="mb-6">
@@ -95,6 +140,14 @@ export default function ParadigmProject() {
         <p className="mb-6">
           I designed <strong>Paradigm Mobile</strong> from scratch — a single mobile library that brought together all of Mail&apos;s native apps. As part of this project I built an end-to-end color and typography system inherited directly from the base Paradigm system. The library grew to more than 30 core system components, designed with iOS and Android specifics in mind, which let product teams assemble mobile screens from ready-made blocks and freed the apps from UI fragmentation.
         </p>
+
+        <ZoomableImage
+          src={paradigm5}
+          alt="Paradigm Mobile's type scale with iOS, Android, and web sizes"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+
 
         <h2 id="2025-2026" className="font-medium mb-1 mt-10">2025–2026: from designer to head of the direction</h2>
         <p className="mb-6">
@@ -120,6 +173,12 @@ export default function ParadigmProject() {
         <p>
           Over six years my focus shifted from drawing individual pixels and assembling files in Figma to building the rules, architecture, and environment that let products evolve faster and better. My main goal today isn&apos;t to build every component myself, but to build processes, grow the people on the team, and set the systemic direction that helps make the ecosystem&apos;s user experience cohesive and easy to use.
         </p>
+        <ZoomableImage
+          src={paradigm6}
+          alt="Overview of the Paradigm Mobile component library"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
       </div>
     </main>
   );

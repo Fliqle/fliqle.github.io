@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
+import { ProjectLinks } from "../../project-links";
 import { ArticleNav } from "../../article-nav";
+import { ZoomableImage } from "../../zoomable-image";
 import paradigmBanner from "../../../public/projects/paradigm2.webp";
+import paradigm1 from "../../../public/projects/inside/paradigm/paradigm1.webp";
+import paradigm2 from "../../../public/projects/inside/paradigm/paradigm2.webp";
+import paradigm3 from "../../../public/projects/inside/paradigm/paradigm3.webp";
+import paradigm4 from "../../../public/projects/inside/paradigm/paradigm4.webp";
+import paradigm5 from "../../../public/projects/inside/paradigm/paradigm5.webp";
+import paradigm6 from "../../../public/projects/inside/paradigm/paradigm6.webp";
 
 export const metadata: Metadata = {
   title: "Дизайн-система Paradigm — Валера Сироткин",
@@ -39,7 +47,16 @@ export default function ParadigmProject() {
       <h1 className="text-lg sm:text-2xl font-medium mt-4 mb-2">Дизайн-система Paradigm</h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">2019–2026</p>
 
+                  <ProjectLinks
+        links={[
+          { href: "https://paradigm.mail.ru/", title: "Сайт Paradigm", description: "Документация, гайдлайны и компоненты Paradigm" },
+          { href: "https://www.figma.com/@paradigm", title: "Paradigm в Figma Community", description: "UI-кит с готовыми компонентами для дизайнеров" },
+        ]}
+      />
+
       <ProjectBanner src={paradigmBanner} alt="Дизайн-система Paradigm" />
+
+
 
       <div className="text-sm text-gray-500 dark:text-gray-400 space-y-4 mb-6">
         <p>
@@ -61,10 +78,31 @@ export default function ParadigmProject() {
           Моей первой большой системной задачей стал полный перенос Paradigm из файлов Sketch в Figma. Нужно было не просто скопировать компоненты, а заново пересобрать их структуру, используя новые возможности auto-layout, состояний и вариантов. Это позволило создать единый актуальный источник правды для всех дизайнеров Почты и Облака, ускорить сборку макетов и существенно снизить разрыв между дизайном и разработкой.
         </p>
 
+        <ZoomableImage
+          src={paradigm1}
+          alt="Обложка архива UI-кита дизайн-системы Paradigm"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
+
         <h3 id="core-components" className="font-medium mb-1 mt-6">Проектирование базовых UI-компонентов</h3>
         <p className="mb-6">
           Параллельно я лично проектировал и собирал ключевые UI-компоненты: кнопки, поля ввода (Input), чекбоксы, свитчи, модальные окна и карточки. Для каждого элемента я прорабатывал состояния, адаптивность и писал подробную техническую документацию с правилами применения. Позже собранные мной UI-киты стали базой, а сами библиотеки VKUI и Paradigm были опубликованы в Figma Community как Open Source инструменты.
         </p>
+                <ZoomableImage
+          src={paradigm3}
+          alt="Палитра цветовых токенов дизайн-системы Paradigm"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+
+        <ZoomableImage
+          src={paradigm2}
+          alt="Библиотека базовых компонентов: поля ввода, логотипы сервисов и аватары"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+
 
         <h2 id="2021-2023" className="font-medium mb-1 mt-10">2021–2023: масштабирование — токены VKUI и единая база знаний</h2>
         <p className="mb-6">
@@ -75,6 +113,14 @@ export default function ParadigmProject() {
         <p className="mb-6">
           В 2021 году мы объединили дизайн-систему Paradigm с общекомпанейской системой VKUI, где Paradigm стала одной из двух базовых тем. Совместно с командой ВКонтакте разработал новую структуру дизайн-токенов: спроектировал логику связей, систему именования и лично написал техническую документацию. Мы создали общий репозиторий, который поддерживал светлую и тёмную темы, а также давал продуктам локальные темы, что позволило гибко кастомизировать визуальный язык приложений без масштабного переписывания кода.
         </p>
+
+
+        <ZoomableImage
+          src={paradigm4}
+          alt="Архитектура токенов для светлой и тёмной темы"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
 
         <h3 id="site-relaunch" className="font-medium mb-1 mt-6">Перезапуск сайта Paradigm</h3>
         <p className="mb-6">
@@ -95,6 +141,14 @@ export default function ParadigmProject() {
         <p className="mb-6">
           Я спроектировал с нуля единую мобильную библиотеку <strong>Paradigm Mobile</strong>, которая объединила все нативные приложения Mail. В рамках этого проекта я выстроил сквозную систему цвета и типографики, напрямую наследуемую от базовой Paradigm. Библиотека включила более 30 ключевых системных компонентов, спроектированных с учётом особенностей iOS и Android, что позволило продуктовым командам собирать мобильные экраны из готовых блоков и избавило сервисы от фрагментации UI.
         </p>
+
+        <ZoomableImage
+          src={paradigm5}
+          alt="Типографическая шкала Paradigm Mobile с размерами для iOS, Android и веба"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-4 w-full h-auto"
+        />
+
 
         <h2 id="2025-2026" className="font-medium mb-1 mt-10">2025–2026: от дизайнера к руководителю направления</h2>
         <p className="mb-6">
@@ -120,6 +174,12 @@ export default function ParadigmProject() {
         <p>
           За шесть лет мой фокус сместился от отрисовки конкретных пикселей и сборки файлов в Figma к созданию правил, архитектуры и среды, в которой продукты могут развиваться быстрее и качественнее. Моя главная цель сегодня — не делать каждый компонент самому, а выстраивать процессы, развивать людей в команде и формулировать системные ориентиры, которые помогают делать пользовательский опыт экосистемы цельным и удобным.
         </p>
+                <ZoomableImage
+          src={paradigm6}
+          alt="Обзор библиотеки компонентов Paradigm Mobile"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
       </div>
     </main>
   );
