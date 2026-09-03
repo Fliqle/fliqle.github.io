@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ArticleNav } from "../../../article-nav";
 import cloudizerBanner from "../../../../public/projects/inside/Cloudizer1.webp";
 
 export const metadata: Metadata = {
@@ -11,6 +12,12 @@ export const metadata: Metadata = {
 export default function CloudizerProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "dev-process", label: "Development process" },
+          { id: "features", label: "What the extension can do now" },
+        ]}
+      />
       <Link
         href="/en"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -38,12 +45,12 @@ export default function CloudizerProject() {
           collection of references there. When I needed the same kind of tool for Mail Cloud, I
           decided to build it myself with the help of AI tools.
         </p>
-        <h2 className="font-medium mb-1 mt-10">Development process:</h2>
+        <h2 id="dev-process" className="font-medium mb-1 mt-10">Development process:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>First prototypes in ChatGPT: the basic script already created a folder in Mail Cloud, but uploading images needed debugging. It also took extra work to overlay the save icon correctly on top of images on websites.</li>
           <li>Refactoring and scaling with Claude Code: rewrote the code architecture and added new features.</li>
         </ul>
-        <h2 className="font-medium mb-1 mt-10">What the extension can do now:</h2>
+        <h2 id="features" className="font-medium mb-1 mt-10">What the extension can do now:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>Sorting by category: creating subfolders and choosing where to save.</li>
           <li>Quick access: saving images straight from the right-click context menu.</li>

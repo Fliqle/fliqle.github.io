@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ArticleNav } from "../../../article-nav";
 import { ZoomableImage } from "../../../zoomable-image";
 import vkEducationBanner from "../../../../public/projects/inside/Education/DN-109.webp";
 import vkEducationFigma from "../../../../public/projects/inside/Education/figma-education.webp";
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
 export default function VkEducationProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "task", label: "The task" },
+          { id: "approach", label: "Approach" },
+        ]}
+      />
       <Link
         href="/en"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -38,7 +45,7 @@ export default function VkEducationProject() {
         <p className="mb-6">
           Over that time, around 400 students have gone through my classes. I help developers understand the basics of design, learn Figma, and build interfaces on their own — not just copying ready-made mockups, but understanding the elements and decisions behind them.
         </p>
-        <h2 className="font-medium mb-1 mt-10">The task</h2>
+        <h2 id="task" className="font-medium mb-1 mt-10">The task</h2>
         <p className="mb-6">
           Students come to Tekhnopark primarily as developers. Over the course of a semester they work on large projects, which they defend at the end.
         </p>
@@ -48,7 +55,7 @@ export default function VkEducationProject() {
         <p className="mb-6">
           My goal is to give students a basic understanding of design and a practical tool they can use to work on the interfaces of their own projects.
         </p>
-        <h2 className="font-medium mb-1 mt-10">Approach</h2>
+        <h2 id="approach" className="font-medium mb-1 mt-10">Approach</h2>
         <p className="mb-6">
           The course consists of a lecture on design fundamentals and two hands-on Figma workshops.
         </p>

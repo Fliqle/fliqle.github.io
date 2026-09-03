@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
+import { ArticleNav } from "../../article-nav";
 import { ZoomableImage } from "../../zoomable-image";
 import vkEducationBanner from "../../../public/projects/inside/Education/DN-109.webp";
 import vkEducationFigma from "../../../public/projects/inside/Education/figma-education.webp";
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
 export default function VkEducationProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "task", label: "Задача" },
+          { id: "approach", label: "Подход" },
+        ]}
+      />
       <Link
         href="/"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -38,7 +45,7 @@ export default function VkEducationProject() {
         <p className="mb-6">
           За это время через мои занятия прошло около 400 студентов. Я помогаю разработчикам разобраться в основах дизайна, освоить Figma и научиться самостоятельно собирать интерфейсы — не просто повторяя готовые макеты, а понимая, из каких элементов и решений они состоят.
         </p>
-        <h2 className="font-medium mb-1 mt-10">Задача</h2>
+        <h2 id="task" className="font-medium mb-1 mt-10">Задача</h2>
         <p className="mb-6">
           Студенты приходят в Технопарк прежде всего как разработчики. В течение семестра они работают над большими проектами, которые в конце защищают.
         </p>
@@ -48,7 +55,7 @@ export default function VkEducationProject() {
         <p className="mb-6">
           Моя задача — дать студентам базовое понимание дизайна и практический инструмент, с которым они смогут самостоятельно работать над интерфейсами своих проектов.
         </p>
-        <h2 className="font-medium mb-1 mt-10">Подход</h2>
+        <h2 id="approach" className="font-medium mb-1 mt-10">Подход</h2>
         <p className="mb-6">
           Обучение состоит из лекции об основах дизайна и двух практических семинаров в Figma.
         </p>

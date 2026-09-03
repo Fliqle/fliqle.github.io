@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ArticleNav } from "../../../article-nav";
 import vkuiBanner from "../../../../public/projects/vkui2.webp";
 
 export const metadata: Metadata = {
@@ -11,6 +12,15 @@ export const metadata: Metadata = {
 export default function VkuiProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "context-merge", label: "Context and the push to merge" },
+          { id: "workshop", label: "A workshop at VKontakte's office: 4 days, 160 tokens" },
+          { id: "components", label: "Building the components and a shared language (design × dev)" },
+          { id: "scaling", label: "Scaling and rolling out to Mail products" },
+          { id: "results", label: "Results" },
+        ]}
+      />
       <Link
         href="/en"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -32,7 +42,7 @@ export default function VkuiProject() {
 
       <div className="text-gray-700 dark:text-gray-300 space-y-2 mb-48 leading-relaxed">
 
-        <h2 className="font-medium mb-1 mt-10">Context and the push to merge</h2>
+        <h2 id="context-merge" className="font-medium mb-1 mt-10">Context and the push to merge</h2>
         <p className="mb-6">
           It all started as the company was entering a phase of large-scale ecosystem rebranding. At the time, we had two fundamental design systems:
         </p>
@@ -44,7 +54,7 @@ export default function VkuiProject() {
           Maintaining and developing two independent design systems in parallel demanded enormous frontend resources and created a visual gap whenever users moved between services. To fix both problems, we decided to merge the systems into one — making <strong>VKUI</strong> the company&apos;s core technical and component standard, and integrating <strong>Paradigm</strong> as one of its base themes.
         </p>
 
-        <h2 className="font-medium mb-1 mt-10">A workshop at VKontakte&apos;s office: 4 days, 160 tokens</h2>
+        <h2 id="workshop" className="font-medium mb-1 mt-10">A workshop at VKontakte&apos;s office: 4 days, 160 tokens</h2>
         <p className="mb-6">
           You can&apos;t merge two mature systems by decree in Jira. To reach common ground, we got together with VKontakte&apos;s development and design team at their office and started a complex process of joint alignment.
         </p>
@@ -58,7 +68,7 @@ export default function VkuiProject() {
           I was trusted to put together <strong>the very first version of the library</strong> and fill it with colors. Together with Vanya Baryshev and Lesha Zaytsev from VKontakte, I designed the logic behind how tokens relate to each other, set the naming convention, and then wrote the documentation myself. That became the foundation for a shared token repository supporting both global themes (light/dark) and custom themes for individual products.
         </p>
 
-        <h2 className="font-medium mb-1 mt-10">Building the components and a shared language (design × dev)</h2>
+        <h2 id="components" className="font-medium mb-1 mt-10">Building the components and a shared language (design × dev)</h2>
         <p className="mb-6">
           Once the token layer was locked in, we moved on to the component base. As a pilot, we took the <strong>Button</strong> and, step by step, built out all of its possible states, sizes, icon variations, and effects. It&apos;s where we refined our approach to naming parameters. It was critical for us to establish a <strong>single source of truth</strong> — a shared vocabulary so that a designer in Figma and an engineer in React code worked with exactly the same props and terms.
         </p>
@@ -73,7 +83,7 @@ export default function VkuiProject() {
           Throughout the build we worked in very close coordination with the VKUI platform team. We strictly checked how well each new component matched the token system we&apos;d built, and reviewed spacing.
         </p>
 
-        <h2 className="font-medium mb-1 mt-10">Scaling and rolling out to Mail products</h2>
+        <h2 id="scaling" className="font-medium mb-1 mt-10">Scaling and rolling out to Mail products</h2>
         <p className="mb-6">
           My key hands-on task during the rollout phase was scaling the updated VKUI to Mail products (Mail, Cloud). We structured the migration in stages so we wouldn&apos;t have to pause product feature work:
         </p>
@@ -86,7 +96,7 @@ export default function VkuiProject() {
           The biggest upside of the new foundation was that Mail products got <strong>built-in responsiveness</strong> and <strong>automatic light/dark theme switching</strong> out of the box, with no need to write custom code for every screen. Throughout the process I acted as the connecting link, keeping up steady communication between the VKUI engineers and the Mail product teams.
         </p>
 
-        <h2 className="font-medium mb-1 mt-10">Results</h2>
+        <h2 id="results" className="font-medium mb-1 mt-10">Results</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li><strong>Unified ecosystem:</strong> two isolated design systems turned into a single platform standard, available as Open Source and on Figma Community.</li>
           <li><strong>Unified token architecture:</strong> built a structure of 160+ tokens supporting dark, light, and the company&apos;s product themes.</li>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
+import { ArticleNav } from "../../article-nav";
 import RDCbanner from "../../../public/projects/inside/rdc/eUDrPv_L4LMGvDPzFp2CTBctUZbNen1w-XeS_hvcyy7q2NN1Dydem0BlroM8hfHje01dZE1tMTp9yOk8fqJRiYkp.webp";
 import rdc1 from "../../../public/projects/inside/rdc/Slide 4.webp";
 import rdc2 from "../../../public/projects/inside/rdc/Slide 5.webp";
@@ -15,6 +16,19 @@ export const metadata: Metadata = {
 export default function RdcProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "what-i-did", label: "Что я делал" },
+          { id: "pr-communications", label: "PR и коммуникации" },
+          { id: "running-competition", label: "Организация конкурса" },
+          { id: "budget", label: "Бюджет" },
+          { id: "landing", label: "Лендинг" },
+          { id: "jury", label: "Жюри" },
+          { id: "platforms", label: "Платформы" },
+          { id: "final-broadcasts", label: "Финал и трансляции" },
+          { id: "content-promotion", label: "Контент и продвижение" },
+        ]}
+      />
       <Link
         href="/"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -42,12 +56,12 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h2 className="font-medium mb-1 mt-10">Что я делал</h2>
-      <h3 className="font-medium mb-1 mt-6">PR и коммуникации</h3>
+      <h2 id="what-i-did" className="font-medium mb-1 mt-10">Что я делал</h2>
+      <h3 id="pr-communications" className="font-medium mb-1 mt-6">PR и коммуникации</h3>
       <p className="mb-6">
         Начинал с продвижения конкурса: занимался рассылками, PR и коммуникацией с участниками. Помогал привлекать внимание к конкурсу и поддерживать интерес на протяжении всех этапов.
       </p>
-      <h3 className="font-medium mb-1 mt-6">Организация конкурса</h3>
+      <h3 id="running-competition" className="font-medium mb-1 mt-6">Организация конкурса</h3>
       <p className="mb-6">
         Вместе с Пашей отвечал за проведение конкурса целиком: планирование, координацию команд и подрядчиков, сроки, бюджет и решение организационных вопросов.
       </p>
@@ -57,11 +71,11 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h3 className="font-medium mb-1 mt-6">Бюджет</h3>
+      <h3 id="budget" className="font-medium mb-1 mt-6">Бюджет</h3>
       <p className="mb-6">
         Помогал собирать общий бюджет конкурса и объединять в нём бюджеты разных направлений.
       </p>
-      <h3 className="font-medium mb-1 mt-6">Лендинг</h3>
+      <h3 id="landing" className="font-medium mb-1 mt-6">Лендинг</h3>
       <p className="mb-6">
         Организовал переезд основного лендинга на конструктор сайтов. Это позволило отказаться от постоянного привлечения разработчиков: теперь большинство изменений я мог делать самостоятельно, что заметно ускорило выпуск обновлений.
       </p>
@@ -71,19 +85,19 @@ export default function RdcProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-4 w-full h-auto"
         />
-      <h3 className="font-medium mb-1 mt-6">Жюри</h3>
+      <h3 id="jury" className="font-medium mb-1 mt-6">Жюри</h3>
       <p className="mb-6">
         Организовывал работу жюри, договаривался с экспертами об участии в конкурсе и финале, координировал оценку работ. Сам также участвовал в оценивании.
       </p>
-      <h3 className="font-medium mb-1 mt-6">Платформы</h3>
+      <h3 id="platforms" className="font-medium mb-1 mt-6">Платформы</h3>
       <p className="mb-6">
         Вёл переговоры с платформами, на которых проходил конкурс. За время моей работы RDC проводился на Студии от ПРОСТОРа - мини-приложении ВКонтакте, а с 2026 года — на Dprofile.
       </p>
-      <h3 className="font-medium mb-1 mt-6">Финал и трансляции</h3>
+      <h3 id="final-broadcasts" className="font-medium mb-1 mt-6">Финал и трансляции</h3>
       <p className="mb-6">
         Участвовал в подготовке и проведении онлайн-трансляций, был ведущим финала со стороны организаторов. Помогал организовывать офлайн-финал и координировать финалистов.
       </p>
-      <h3 className="font-medium mb-1 mt-6">Контент и продвижение</h3>
+      <h3 id="content-promotion" className="font-medium mb-1 mt-6">Контент и продвижение</h3>
       <p className="mb-6">
         Создавал креативы, писал тексты и готовил материалы для продвижения конкурса. В зависимости от задачи совмещал роли организатора, дизайнера, копирайтера, разработчика и ведущего.
       </p>

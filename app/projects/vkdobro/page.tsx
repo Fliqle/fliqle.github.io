@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
+import { ArticleNav } from "../../article-nav";
 import { ZoomableImage } from "@/app/zoomable-image";
 import dobrobanner from "../../../public/projects/inside/dobro/vkdobro1.webp";
 import dobroold from "../../../public/projects/inside/dobro/vkdobro2.webp";
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
 export default function VkDobroProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "ecosystem-web", label: "Экосистема и веб-платформа" },
+          { id: "leadership-handover", label: "Лидерство и передача проекта" },
+        ]}
+      />
       <Link
         href="/"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -48,7 +55,7 @@ export default function VkDobroProject() {
       <p className="mb-6">
           Перед проектом стоял жесткий дедлайн: нужно было в сжатые сроки провести ребрендинг, перейти от Добро Mail к VK Dobro и перевести все интерфейсы на единый визуальный язык экосистемы — VKUI.
       </p>
-      <h2 className="font-medium mb-1 mt-10">Экосистема и веб-платформа</h2>
+      <h2 id="ecosystem-web" className="font-medium mb-1 mt-10">Экосистема и веб-платформа</h2>
       <p className="mb-6">
           Чтобы не останавливать текущую работу сервиса, я сразу включился в формат hands-on дизайна и начал редизайн с изолированных контентных блоков:
       </p>
@@ -71,7 +78,7 @@ export default function VkDobroProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
-      <h2 className="font-medium mb-1 mt-10">Лидерство и передача проекта</h2>
+      <h2 id="leadership-handover" className="font-medium mb-1 mt-10">Лидерство и передача проекта</h2>
       <p className="mb-6">
           Когда у команды появилась открытая ставка на продуктового дизайнера, я активно подключился к выстраиванию найма:
       </p>

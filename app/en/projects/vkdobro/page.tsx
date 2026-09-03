@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../../project-banner";
+import { ArticleNav } from "../../../article-nav";
 import { ZoomableImage } from "@/app/zoomable-image";
 import dobrobanner from "../../../../public/projects/inside/dobro/vkdobro1.webp";
 import dobroold from "../../../../public/projects/inside/dobro/vkdobro2.webp";
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
 export default function VkDobroProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "ecosystem-web", label: "Ecosystem and web platform" },
+          { id: "leadership-handover", label: "Leadership and project handover" },
+        ]}
+      />
       <Link
         href="/en"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -48,7 +55,7 @@ export default function VkDobroProject() {
       <p className="mb-6">
           The project had a tight deadline: it needed to go through a rebrand, move from Dobro Mail to VK Dobro, and migrate all interfaces to the ecosystem&apos;s shared visual language — VKUI — in a short amount of time.
       </p>
-      <h2 className="font-medium mb-1 mt-10">Ecosystem and web platform</h2>
+      <h2 id="ecosystem-web" className="font-medium mb-1 mt-10">Ecosystem and web platform</h2>
       <p className="mb-6">
           To keep the service running without interruption, I jumped straight into a hands-on design workflow and started the redesign with isolated content blocks:
       </p>
@@ -71,7 +78,7 @@ export default function VkDobroProject() {
           sizes="(max-width: 692px) 100vw, 692px"
           className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
-      <h2 className="font-medium mb-1 mt-10">Leadership and project handover</h2>
+      <h2 id="leadership-handover" className="font-medium mb-1 mt-10">Leadership and project handover</h2>
       <p className="mb-6">
           When the team got an open headcount for a product designer, I got actively involved in the hiring process:
       </p>

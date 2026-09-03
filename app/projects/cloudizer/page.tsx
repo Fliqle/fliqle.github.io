@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProjectBanner } from "../../project-banner";
+import { ArticleNav } from "../../article-nav";
 import cloudizerBanner from "../../../public/projects/inside/Cloudizer1.webp";
 
 export const metadata: Metadata = {
@@ -11,6 +12,12 @@ export const metadata: Metadata = {
 export default function CloudizerProject() {
   return (
     <main className="mx-auto max-w-[692px] px-6 antialiased mt-12">
+      <ArticleNav
+        sections={[
+          { id: "dev-process", label: "Процесс разработки" },
+          { id: "features", label: "Что умеет расширение сейчас" },
+        ]}
+      />
       <Link
         href="/"
         className="inline-flex h-[22px] items-center rounded-full border border-gray-300 px-2 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
@@ -33,12 +40,12 @@ export default function CloudizerProject() {
         <p>
           Раньше я активно пользовался похожим расширением для Яндекс Диска и собрал большую коллекцию референсов. Когда мне потребовался аналогичный инструмент для Облака Mail, я решил создать его самостоятельно с помощью AI-инструментов.
         </p>
-        <h2 className="font-medium mb-1 mt-10">Процесс разработки:</h2>
+        <h2 id="dev-process" className="font-medium mb-1 mt-10">Процесс разработки:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>Первые прототипы на ChatGPT: базовый скрипт уже создавал папку в Облаке, но загрузка изображений требовала отладки. Дополнительно пришлось потрудиться над версткой иконки поверх иллюстраций на сайтах.</li>
           <li>Рефакторинг и масштабирование с Claude Code: переписал архитектуру кода и добавил новые функции.</li>
         </ul>
-        <h2 className="font-medium mb-1 mt-10">Что умеет расширение сейчас:</h2>
+        <h2 id="features" className="font-medium mb-1 mt-10">Что умеет расширение сейчас:</h2>
         <ul className="list-disc list-outside text-gray-700 dark:text-gray-300 mt-2 space-y-2 mb-4 px-4">
           <li>Сортировка по категориям: создание подпапок и выбор места сохранения.</li>
           <li>Быстрый доступ: сохранение изображений прямо из контекстного меню по правой кнопке мыши.</li>
