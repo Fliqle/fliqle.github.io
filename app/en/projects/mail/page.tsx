@@ -7,6 +7,7 @@ import mailBanner from "../../../../public/Mail.png";
 import mailspeed from "../../../../public/projects/inside/mail/mail-speed.webp";
 import mailpayments from "../../../../public/projects/inside/mail/mail-payments.webp";
 import mailportal from "../../../../public/projects/inside/mail/mail-portal.webp";
+import mailinterface from "../../../../public/projects/inside/mail/mail-interface.webp";
 
 export const metadata: Metadata = {
   title: "Mail — Valera Sirotkin",
@@ -223,6 +224,14 @@ export default function MailProject() {
           convenient, 83% as clearer and better structured, and 81% responded positively to the new
           navigation.</strong>
         </p>
+
+        <ZoomableImage
+          src={mailinterface}
+          alt="New interface of the Purchases section"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
+
         <p className="mb-6">
           We also experimented with a new home screen for Mail — a split-screen, more widget-based
           approach instead of the familiar inbox. The idea was for the home screen to give access

@@ -30,7 +30,7 @@ export function SiteHeader() {
           alt={isEn ? "Valera Sirotkin's avatar" : "Аватар Валеры Сироткина"}
           width={80}
           height={80}
-          className="rounded-full"
+          className="rounded-full border border-gray-300 dark:border-gray-700"
         />
       </Link>
       <section>

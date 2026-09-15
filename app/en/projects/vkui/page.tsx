@@ -5,9 +5,9 @@ import { ProjectLinks } from "../../../project-links";
 import { ArticleNav } from "../../../article-nav";
 import { ZoomableImage } from "../../../zoomable-image";
 import vkuiBanner from "../../../../public/projects/vkui2.webp";
-import vkui1 from "../../../../public/projects/inside/vkui/vkui1.png";
-import vkui2 from "../../../../public/projects/inside/vkui/vkui2.png";
-import vkui3 from "../../../../public/projects/inside/vkui/vkui3.png";
+import vkui1 from "../../../../public/projects/inside/vkui/vkui1.webp";
+import vkui2 from "../../../../public/projects/inside/vkui/vkui2.webp";
+import vkui3 from "../../../../public/projects/inside/vkui/vkui3.webp";
 
 export const metadata: Metadata = {
   title: "VKUI Design System — Valera Sirotkin",

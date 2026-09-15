@@ -7,6 +7,7 @@ import mailBanner from "../../../public/Mail.png";
 import mailspeed from "../../../public/projects/inside/mail/mail-speed.webp";
 import mailpayments from "../../../public/projects/inside/mail/mail-payments.webp";
 import mailportal from "../../../public/projects/inside/mail/mail-portal.webp";
+import mailinterface from "../../../public/projects/inside/mail/mail-interface.webp";
 
 export const metadata: Metadata = {
   title: "Почта Mail — Валера Сироткин",
@@ -227,6 +228,14 @@ export default function MailProject() {
           пользователях. <strong>84% пользователей оценили новый интерфейс как более удобный, 83% —
           как более понятный и структурированный, 81% положительно оценили новую навигацию.</strong>
         </p>
+
+        <ZoomableImage
+          src={mailinterface}
+          alt="Новый интерфейс раздела «Покупки»"
+          sizes="(max-width: 692px) 100vw, 692px"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
+        />
+
         <p className="mb-6">
           Мы также экспериментировали с новым главным экраном Почты — split-screen и более
           виджетным подходом вместо привычного inbox. Идея была в том, чтобы главный экран
