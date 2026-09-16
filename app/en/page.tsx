@@ -2,10 +2,26 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const title = "Valera Sirotkin — Designer and Art Director";
+const description =
+  "Valera Sirotkin's personal site: a designer with 15+ years of experience, art director and musician. Working at VK on Mail products.";
+
 export const metadata: Metadata = {
-  title: "Valera Sirotkin — Designer and Art Director",
-  description:
-    "Valera Sirotkin's personal site: a designer with 15+ years of experience, art director and musician. Working at VK on Mail products.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "/og-image-en.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-image-en.png"],
+  },
 };
 
 const projects = [

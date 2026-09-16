@@ -17,10 +17,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Валера Сироткин — продуктовый дизайнер и дизайн-лидер";
+const description =
+  "Личный сайт Валерия Сироткина: дизайнер с опытом 15+ лет, арт-директор и дизайн-лидер. Работаю в VK над продуктами Mail.";
+
 export const metadata: Metadata = {
-  title: "Валера Сироткин — продуктовый дизайнер и дизайн-лидер",
-  description:
-    "Личный сайт Валерия Сироткина: дизайнер с опытом 15+ лет, арт-директор и дизайн-лидер. Работаю в VK над продуктами Mail.",
+  metadataBase: new URL("https://fliqle.github.io"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    locale: "ru_RU",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
