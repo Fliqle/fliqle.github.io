@@ -148,6 +148,18 @@ export default function Home() {
 
           <div className="space-y-2">
             <a
+              href="https://team.vk.company/a11y_training/design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
+            >
+              <h3 className="inline-block">VK Course · Digital Accessibility for Designers</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Created a course on designing accessible digital products
+              </p>
+            </a>
+
+            <a
               href="https://vk.com/video_ext.php?oid=-152990965&id=456239715&hd=2"
               target="_blank"
               rel="noopener noreferrer"
