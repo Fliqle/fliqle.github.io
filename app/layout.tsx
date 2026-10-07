@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "./site-header";
 import { GlobalHoverSound } from "./global-hover-sound";
+import { YandexMetrika } from "./yandex-metrika";
 
 const GA_MEASUREMENT_ID = "G-33J2P6HKXG";
 
@@ -60,6 +61,7 @@ export default function RootLayout({
           gtag('config', '${GA_MEASUREMENT_ID}');
         `}
       </Script>
+      <YandexMetrika />
       <SiteHeader />
       <GlobalHoverSound />
       {children}
