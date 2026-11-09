@@ -18,6 +18,7 @@ export function SiteHeader() {
 
   const homeHref = isEn ? "/en" : "/";
   const aboutHref = isEn ? "/en/about" : "/about";
+  const materialsHref = isEn ? "/en/materials" : "/materials";
   const switchHref = isEn
     ? pathname.replace(/^\/en/, "") || "/"
     : `/en${pathname === "/" ? "" : pathname}`;
@@ -40,7 +41,7 @@ export function SiteHeader() {
           </Link>
           <Link
             href={switchHref}
-            className="rounded-full border border-gray-300 px-2 py-0.5 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
+            className="rounded-full border border-gray-300 px-2 py-1 text-xs text-gray-500 no-underline hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-neutral-800"
           >
             {isEn ? "RU" : "EN"}
           </Link>
@@ -50,16 +51,24 @@ export function SiteHeader() {
         </p>
         <div className="mt-2 flex items-center gap-3 text-base text-gray-500 dark:text-gray-400">
           <Link href={aboutHref} className={linkClass}>
-            Work
+            {isEn ? "Work" : "Работа"}
           </Link>
-          <a href="https://www.linkedin.com/in/vsirotkin/" target="_blank" rel="noopener noreferrer" className={linkClass}>
-            LinkedIn
-          </a>
-          <a href="https://cloud.mail.ru/public/ovum/cvjPJQ5KB" target="_blank" rel="noopener noreferrer" className={linkClass}>
-            Resume
+          <Link href={materialsHref} className={linkClass}>
+            {isEn ? "Publications" : "Публикации"}
+          </Link>
+          <a
+            href={isEn ? "/Sirotkin_CV_eng.pdf" : "/Sirotkin_CV.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClass}
+          >
+            {isEn ? "Resume" : "Резюме"}
           </a>
           <a href="mailto:valera@internet.ru" className={linkClass}>
-            Email
+            {isEn ? "Email" : "Почта"}
+          </a>
+          <a href="https://www.linkedin.com/in/vsirotkin/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+            LinkedIn
           </a>
         </div>
       </section>

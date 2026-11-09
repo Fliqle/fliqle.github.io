@@ -88,10 +88,10 @@ export default function Home() {
     <main className="mx-auto max-w-[692px] overflow-x-hidden px-6 antialiased ">
       <h1 className="sr-only">Valera Sirotkin — product designer and design leader</h1>
       {/* Now */}
-      <section className="max-w-4xl mx-auto py-16">
+      <section className="max-w-4xl mx-auto py-12">
         <p className="mb-2">15+ years in design. I&apos;ve worked with Mail and VK, grown the Paradigm and VKUI design systems, and in recent years led product design teams.</p>
         <p className="mb-6">I help turn complex products and processes into clear systems — from a single user scenario to a design team.</p>
-        <h2 id="2019-2021" className="font-medium mb-1 mt-16">What I do</h2>
+        <h2 id="2019-2021" className="font-medium mb-1 mt-12">What I do</h2>
         <h3 className="inline-block">Product Design</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Complex user scenarios, information architecture, product experiments.
@@ -139,74 +139,6 @@ export default function Home() {
                 </div>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* Talks */}
-        <section className="mt-16">
-          <h2 className="font-medium mb-1">Talks</h2>
-
-          <div className="space-y-2">
-            <a
-              href="https://team.vk.company/a11y_training/design/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">VK Course · Digital Accessibility for Designers</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Created a course on designing accessible digital products
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-152990965&id=456239715&hd=2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">May 2025 · Design Systems Cup</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Represented VK at the first Design Systems Cup
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-147415323&id=456240496&hd=2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">October 2024 · VK Design Conf&rsquo;24</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Talked about working with accessibility at the design system level
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-156923926&id=456239244&hd=2&autoplay=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">November 2023 · VK Design Conf&rsquo;23</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Together with Lyosha Zaytsev, told the story of how VKUI works
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-60345511&id=456239047&hash=2b1935d9afebcab5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">April 2022 · Russian Design Cup X2</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Spoke in the Russian Design Cup final about Figma tricks
-              </p>
-            </a>
-
           </div>
         </section>
 

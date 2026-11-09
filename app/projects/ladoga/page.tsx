@@ -52,7 +52,7 @@ export default function LadogaProject() {
           src={ladogaComponents}
           alt="Список компонентов скриншотом с Figma"
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-16 w-full h-auto"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
         <p className="mb-6">
           Ladoga проектировалась не под конкретный интерфейс. Ей предстояло стать универсальной основой для продуктов, которых на тот момент еще не существовало.
@@ -81,7 +81,7 @@ export default function LadogaProject() {
           src={ladogaVariables}
           alt="Система цветов"
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-16 w-full h-auto"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
         <p>
           За три месяца мы завершили первую рабочую версию Ladoga: headless-фундамент с гибкой цветовой системой, токенами дизайна, 17 базовыми компонентами и полной документацией.
@@ -94,7 +94,7 @@ export default function LadogaProject() {
           src={ladogaButton}
           alt="Система цветов"
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-16 w-full h-auto"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
         <p>
           Работа над Ladoga укрепила важный для меня принцип: дизайн-система не должна решать абсолютно все задачи продукта, чтобы быть полезной.

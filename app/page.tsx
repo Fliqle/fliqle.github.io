@@ -65,10 +65,10 @@ export default function Home() {
     <main className="mx-auto max-w-[692px] overflow-x-hidden px-6 antialiased ">
       <h1 className="sr-only">Валера Сироткин — продуктовый дизайнер и дизайн-лидер</h1>
       {/* Сейчас */}
-      <section className="max-w-4xl mx-auto py-16">
+      <section className="max-w-4xl mx-auto py-12">
         <p className="mb-2">15+ лет в дизайне. Работал с Mail и VK, развивал дизайн-системы Paradigm и VKUI, последние годы — руководил командами продуктовых дизайнеров.</p>
         <p className="mb-6">Помогаю превращать сложные продукты и процессы в понятные системы — от пользовательского сценария до дизайн-команды.</p>
-        <h2 id="2019-2021" className="font-medium mb-1 mt-16">Чем я занимаюсь</h2>
+        <h2 id="2019-2021" className="font-medium mb-1 mt-12">Чем я занимаюсь</h2>
         <h3 className="inline-block">Product Design</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Сложные пользовательские сценарии, информационная архитектура, продуктовые эксперименты.
@@ -116,87 +116,6 @@ export default function Home() {
                 </div>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* Видео */}
-        <section className="mt-16">
-          <h2 className="font-medium mb-1">Выступления</h2>
-
-          <div className="space-y-2">
-            <a
-              href="https://team.vk.company/a11y_training/design/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">VK · Цифровая доступность для дизайнеров</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Записал курс о том, как проектировать доступные цифровые продукты
-              </p>
-            </a>
-
-            <a
-              href="https://vkvideo.ru/video-60345511_456239051"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">Октябрь 2025 · Russian Design Cup 2025 Финал</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Был ведущим финала RDC, представлял участников, модерировал работу жюри
-              </p>
-            </a>
-
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-152990965&id=456239715&hd=2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">Май 2025 · Кубок дизайн-систем</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Участвовал как представитель компании VK в первом кубке дизайн-систем
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-147415323&id=456240496&hd=2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">Октябрь 2024 · VK Design Conf’24</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Рассказал про работу с доступностью на уровне дизайн-системы
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-156923926&id=456239244&hd=2&autoplay=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">Ноябрь 2023 · VK Design Conf’23</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Вместе с Лешей Зайцевым рассказали как устроена работа VKUI
-              </p>
-            </a>
-
-            <a
-              href="https://vk.com/video_ext.php?oid=-60345511&id=456239047&hash=2b1935d9afebcab5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mx-3 flex flex-col rounded-xl px-3 py-2 no-underline hover:bg-[#F5F4F4] dark:hover:bg-neutral-800"
-            >
-              <h3 className="inline-block">Апрель 2022 · Russian Design Cup X2</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Выступил в финале Russian Design Cup и рассказал про фишки в Figma
-              </p>
-            </a>
-
           </div>
         </section>
 

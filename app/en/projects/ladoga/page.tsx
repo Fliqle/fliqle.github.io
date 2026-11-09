@@ -61,7 +61,7 @@ export default function LadogaProject() {
           src={ladogaComponents}
           alt="Component list screenshot from Figma"
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-16 w-full h-auto"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
         <p className="mb-6">
           Ladoga wasn&apos;t designed for any specific interface. It was meant to become a universal
@@ -96,7 +96,7 @@ export default function LadogaProject() {
           src={ladogaVariables}
           alt="Color system"
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-16 w-full h-auto"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
         <p>
           In three months we completed the first working version of Ladoga: a headless foundation
@@ -112,7 +112,7 @@ export default function LadogaProject() {
           src={ladogaButton}
           alt="Color system"
           sizes="(max-width: 692px) 100vw, 692px"
-          className="rounded-xl mt-3 mb-16 w-full h-auto"
+          className="rounded-xl mt-3 mb-12 w-full h-auto"
         />
         <p>
           Working on Ladoga reinforced a principle that matters to me: a design system doesn&apos;t

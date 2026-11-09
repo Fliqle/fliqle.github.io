@@ -92,7 +92,7 @@ export function ArticleNav({ sections }: { sections: Section[] }) {
             key={section.id}
             href={`#${section.id}`}
             onClick={(e) => handleClick(e, section.id)}
-            className={`flex flex-col items-end gap-1.5 ${isNewGroup ? "mt-3" : ""}`}
+            className={`flex flex-col items-end gap-2 ${isNewGroup ? "mt-3" : ""}`}
           >
             <span
               className={`
