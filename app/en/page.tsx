@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { ProjectGrid } from "../project-grid";
 
 const title = "Valera Sirotkin — Designer and Art Director";
 const description =
@@ -31,6 +30,11 @@ const projects = [
     dates: "2019–2026",
     description: "Worked on Mail's key user scenarios and led a team of designers",
     image: "/projects/mail.png",
+    previews: [
+      "/projects/inside/mail/mail-interface.webp",
+      "/projects/inside/mail/mail-speed.webp",
+      "/projects/inside/mail/mail-payments.webp",
+    ],
   },
   {
     href: "/en/projects/paradigm",
@@ -38,6 +42,11 @@ const projects = [
     dates: "2019–2026",
     description: "From a component library to token architecture, processes, and the team that maintains the system.",
     image: "/projects/paradigm.png",
+    previews: [
+      "/projects/inside/paradigm/paradigm1.webp",
+      "/projects/inside/paradigm/paradigm4.webp",
+      "/projects/inside/paradigm/paradigm6.webp",
+    ],
   },
   {
     href: "/en/projects/vkui",
@@ -45,6 +54,11 @@ const projects = [
     dates: "2021–2024",
     description: "Designed the token architecture and took part in merging Paradigm and VKUI into a shared systemic foundation for VK's products.",
     image: "/projects/vkui.png",
+    previews: [
+      "/projects/inside/vkui/vkui1.webp",
+      "/projects/inside/vkui/vkui2.webp",
+      "/projects/inside/vkui/vkui3.webp",
+    ],
   },
   {
     href: "/en/projects/vkdobro",
@@ -52,6 +66,11 @@ const projects = [
     dates: "2022–2023",
     description: "VK's charity platform. Helped with the rebrand and the migration to the shared design system.",
     image: "/projects/vkdobro.png",
+    previews: [
+      "/projects/inside/dobro/vkdobro1.webp",
+      "/projects/inside/dobro/vkdobro3.webp",
+      "/projects/inside/dobro/vkdobro5.webp",
+    ],
   },
   {
     href: "/en/projects/rdc",
@@ -59,6 +78,11 @@ const projects = [
     dates: "2021–2026",
     description: "The largest design competition in Russia.",
     image: "/projects/rdc.png",
+    previews: [
+      "/projects/inside/rdc/Slide 4.webp",
+      "/projects/inside/rdc/Slide 5.webp",
+      "/projects/inside/rdc/Slide 6.webp",
+    ],
   },
   {
     href: "/en/projects/vkeducation",
@@ -66,6 +90,11 @@ const projects = [
     dates: "2021–2026",
     description: "Lectures on interface design fundamentals and Figma practice.",
     image: "/projects/vkeducation.png",
+    previews: [
+      "/projects/inside/Education/figma-education.webp",
+      "/projects/inside/Education/DN-109.webp",
+      "/projects/vkeducation.png",
+    ],
   },
   {
     href: "/en/projects/cloudizer",
@@ -73,6 +102,11 @@ const projects = [
     dates: "2026",
     description: "Personal project — a browser extension that turns Mail Cloud into a Pinterest-like feed.",
     image: "/projects/cloudizer.png",
+    previews: [
+      "/projects/inside/Cloudizer1.webp",
+      "/projects/cloudizer.png",
+      "/projects/inside/Cloudizer1.webp",
+    ],
   },
   {
     href: "/en/projects/ladoga",
@@ -80,6 +114,11 @@ const projects = [
     dates: "2025",
     description: "A joint project with the VKUI team to build a foundational design system.",
     image: "/projects/ladoga.png",
+    previews: [
+      "/projects/inside/Ladoga/main.webp",
+      "/projects/inside/Ladoga/button.webp",
+      "/projects/inside/Ladoga/components.webp",
+    ],
   },
 ];
 
@@ -113,33 +152,7 @@ export default function Home() {
         <section className="mt-16">
           <h2 className="font-medium mb-1">Projects</h2>
 
-          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {projects.map((project) => (
-              <Link
-                key={project.href}
-                href={project.href}
-                className="flex flex-col rounded-2xl bg-white p-5 shadow-custom no-underline transition-shadow hover:shadow-custom-hover dark:bg-neutral-900"
-              >
-                <div className="flex h-44 items-center justify-center">
-                  {project.image ? (
-                    <Image
-                      src={project.image}
-                      alt=""
-                      width={360}
-                      height={192}
-                      className="aspect-[360/192] w-3/5 rounded-lg object-cover"
-                    />
-                  ) : (
-                    <div className="aspect-[360/192] w-3/5 rounded-lg bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800" />
-                  )}
-                </div>
-                <div>
-                  <h3 className="inline-block">{project.title}</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{project.description}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ProjectGrid projects={projects} />
         </section>
 
       </section>

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import { ProjectGrid } from "./project-grid";
 
 const projects = [
   {
@@ -8,6 +7,11 @@ const projects = [
     dates: "2019–2026",
     description: "Работал над ключевыми пользовательскими сценариями Почты и руководил командой дизайнеров",
     image: "/projects/mail.png",
+    previews: [
+      "/projects/inside/mail/mail-interface.webp",
+      "/projects/inside/mail/mail-speed.webp",
+      "/projects/inside/mail/mail-payments.webp",
+    ],
   },
   {
     href: "/projects/paradigm",
@@ -15,6 +19,11 @@ const projects = [
     dates: "2019–2026",
     description: "От библиотеки компонентов до архитектуры токенов, процессов и команды, которая поддерживает систему.",
     image: "/projects/paradigm.png",
+    previews: [
+      "/projects/inside/paradigm/paradigm1.webp",
+      "/projects/inside/paradigm/paradigm4.webp",
+      "/projects/inside/paradigm/paradigm6.webp",
+    ],
   },
   {
     href: "/projects/vkui",
@@ -22,6 +31,11 @@ const projects = [
     dates: "2021–2024",
     description: "Спроектировал архитектуру токенов и участвовал в объединении Paradigm и VKUI в общий системный фундамент для продуктов VK.",
     image: "/projects/vkui.png",
+    previews: [
+      "/projects/inside/vkui/vkui1.webp",
+      "/projects/inside/vkui/vkui2.webp",
+      "/projects/inside/vkui/vkui3.webp",
+    ],
   },
   {
     href: "/projects/vkdobro",
@@ -29,6 +43,11 @@ const projects = [
     dates: "2022–2023",
     description: "Благотворительный проект VK. Помогал с ребрендингом проекта и переводом на общую дизайн-систему",
     image: "/projects/vkdobro.png",
+    previews: [
+      "/projects/inside/dobro/vkdobro1.webp",
+      "/projects/inside/dobro/vkdobro3.webp",
+      "/projects/inside/dobro/vkdobro5.webp",
+    ],
   },
   {
     href: "/projects/rdc",
@@ -36,6 +55,11 @@ const projects = [
     dates: "2021–2026",
     description: "Самый масштабный конкурс для дизайнеров в России",
     image: "/projects/rdc.png",
+    previews: [
+      "/projects/inside/rdc/Slide 4.webp",
+      "/projects/inside/rdc/Slide 5.webp",
+      "/projects/inside/rdc/Slide 6.webp",
+    ],
   },
   {
     href: "/projects/vkeducation",
@@ -43,6 +67,11 @@ const projects = [
     dates: "2021–2026",
     description: "Лекции по основам дизайна интерфейсов и практика по Figma",
     image: "/projects/vkeducation.png",
+    previews: [
+      "/projects/inside/Education/figma-education.webp",
+      "/projects/inside/Education/DN-109.webp",
+      "/projects/vkeducation.png",
+    ],
   },
   {
     href: "/projects/cloudizer",
@@ -50,6 +79,11 @@ const projects = [
     dates: "2026",
     description: "Личный проект — приложение для браузера, которое делает из Облака Mail аналог Pinterest",
     image: "/projects/cloudizer.png",
+    previews: [
+      "/projects/inside/Cloudizer1.webp",
+      "/projects/cloudizer.png",
+      "/projects/inside/Cloudizer1.webp",
+    ],
   },
   {
     href: "/projects/ladoga",
@@ -57,6 +91,11 @@ const projects = [
     dates: "2025",
     description: "Совместный проект с командой VKUI по созданию базовой дизайн-системы",
     image: "/projects/ladoga.png",
+    previews: [
+      "/projects/inside/Ladoga/main.webp",
+      "/projects/inside/Ladoga/button.webp",
+      "/projects/inside/Ladoga/components.webp",
+    ],
   },
 ];
 
@@ -90,33 +129,7 @@ export default function Home() {
         <section className="mt-16">
           <h2 className="font-medium mb-1">Проекты</h2>
 
-          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {projects.map((project) => (
-              <Link
-                key={project.href}
-                href={project.href}
-                className="flex flex-col rounded-2xl bg-white p-5 shadow-custom no-underline transition-shadow hover:shadow-custom-hover dark:bg-neutral-900"
-              >
-                <div className="flex h-44 items-center justify-center">
-                  {project.image ? (
-                    <Image
-                      src={project.image}
-                      alt=""
-                      width={360}
-                      height={192}
-                      className="aspect-[360/192] w-3/5 rounded-lg object-cover"
-                    />
-                  ) : (
-                    <div className="aspect-[360/192] w-3/5 rounded-lg bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800" />
-                  )}
-                </div>
-                <div>
-                  <h3 className="inline-block">{project.title}</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{project.description}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ProjectGrid projects={projects} />
         </section>
 
       </section>
