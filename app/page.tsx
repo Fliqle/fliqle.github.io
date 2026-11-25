@@ -1,4 +1,5 @@
 import { ProjectGrid } from "./project-grid";
+import Image from "next/image";
 
 const projects = [
   {
@@ -107,23 +108,35 @@ export default function Home() {
       <section className="max-w-4xl mx-auto py-12">
         <p className="mb-2">15+ лет в дизайне. Работал с Mail и VK, развивал дизайн-системы Paradigm и VKUI, последние годы — руководил командами продуктовых дизайнеров.</p>
         <p className="mb-6">Помогаю превращать сложные продукты и процессы в понятные системы — от пользовательского сценария до дизайн-команды.</p>
-        <h2 id="2019-2021" className="font-medium mb-1 mt-12">Чем я занимаюсь</h2>
-        <h3 className="inline-block">Product Design</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Сложные пользовательские сценарии, информационная архитектура, продуктовые эксперименты.
-        </p>
-                <h3 className="inline-block mt-3">Design-systems</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Архитектура, токены, компоненты, темизация, связь Figma ↔ code.
-        </p>
-                        <h3 className="inline-block mt-3">Design leadership</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Команды, найм, развитие дизайнеров, процессы, design quality.
-        </p>
-                        <h3 className="inline-block mt-3">Design strategy</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Приоритеты, системные изменения, синхронизация дизайна и продукта.
-        </p>
+        <h2 id="2019-2021" className="font-medium mb-4 mt-12">Чем я занимаюсь</h2>
+        <div className="flex items-start gap-3">
+          <Image src="/svg/product-design.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Product Design</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Сложные пользовательские сценарии, информационная архитектура, продуктовые эксперименты.</p>
+          </div>
+        </div>
+        <div className="mt-3 flex items-start gap-3">
+          <Image src="/svg/design-systems.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Design-systems</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Архитектура, токены, компоненты, темизация, связь Figma ↔ code.</p>
+          </div>
+        </div>
+        <div className="mt-3 flex items-start gap-3">
+          <Image src="/svg/leadership.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Design leadership</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Команды, найм, развитие дизайнеров, процессы, design quality.</p>
+          </div>
+        </div>
+        <div className="mt-3 flex items-start gap-3">
+          <Image src="/svg/strategy.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Design strategy</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Приоритеты, системные изменения, синхронизация дизайна и продукта.</p>
+          </div>
+        </div>
 
         {/* Проекты */}
         <section className="mt-16">

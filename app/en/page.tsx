@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ProjectGrid } from "../project-grid";
 
 const title = "Valera Sirotkin — Designer and Art Director";
@@ -130,23 +131,35 @@ export default function Home() {
       <section className="max-w-4xl mx-auto py-12">
         <p className="mb-2">15+ years in design. I&apos;ve worked with Mail and VK, grown the Paradigm and VKUI design systems, and in recent years led product design teams.</p>
         <p className="mb-6">I help turn complex products and processes into clear systems — from a single user scenario to a design team.</p>
-        <h2 id="2019-2021" className="font-medium mb-1 mt-12">What I do</h2>
-        <h3 className="inline-block">Product Design</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Complex user scenarios, information architecture, product experiments.
-        </p>
-        <h3 className="inline-block mt-3">Design systems</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Architecture, tokens, components, theming, Figma ↔ code.
-        </p>
-        <h3 className="inline-block mt-3">Design leadership</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Teams, hiring, developing designers, processes, design quality.
-        </p>
-        <h3 className="inline-block mt-3">Design strategy</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Priorities, systemic change, aligning design and product.
-        </p>
+        <h2 id="2019-2021" className="font-medium mb-4 mt-12">What I do</h2>
+        <div className="flex items-start gap-3">
+          <Image src="/svg/product-design.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Product Design</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Complex user scenarios, information architecture, product experiments.</p>
+          </div>
+        </div>
+        <div className="mt-3 flex items-start gap-3">
+          <Image src="/svg/design-systems.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Design systems</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Architecture, tokens, components, theming, Figma ↔ code.</p>
+          </div>
+        </div>
+        <div className="mt-3 flex items-start gap-3">
+          <Image src="/svg/leadership.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Design leadership</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Teams, hiring, developing designers, processes, design quality.</p>
+          </div>
+        </div>
+        <div className="mt-3 flex items-start gap-3">
+          <Image src="/svg/strategy.svg" alt="" width={28} height={28} className="shrink-0 dark:invert" />
+          <div>
+            <h3>Design strategy</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Priorities, systemic change, aligning design and product.</p>
+          </div>
+        </div>
 
         {/* Projects */}
         <section className="mt-16">
