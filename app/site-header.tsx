@@ -4,9 +4,10 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { PluckedLink } from "./plucked-link";
 
 const linkClass =
-  "underline decoration-neutral-500 decoration-1 underline-offset-[2.5px] hover:decoration-neutral-400 dark:hover:decoration-neutral-600";
+  "no-underline";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -49,27 +50,27 @@ export function SiteHeader() {
         <p className="text-base leading-none text-gray-500 dark:text-gray-400">
           {isEn ? "Product Designer · Design Leader" : "Продуктовый дизайнер · Дизайн-лидер"}
         </p>
-        <div className="mt-2 flex items-center gap-3 text-base text-gray-500 dark:text-gray-400">
-          <Link href={aboutHref} className={linkClass}>
+        <div className="mt-4 flex items-center gap-3 text-base text-gray-500 dark:text-gray-400">
+          <PluckedLink href={aboutHref} className={linkClass}>
             {isEn ? "Work" : "Работа"}
-          </Link>
-          <Link href={materialsHref} className={linkClass}>
+          </PluckedLink>
+          <PluckedLink href={materialsHref} className={linkClass}>
             {isEn ? "Publications" : "Публикации"}
-          </Link>
-          <a
+          </PluckedLink>
+          <PluckedLink
             href={isEn ? "/Sirotkin_CV_eng.pdf" : "/Sirotkin_CV.pdf"}
             target="_blank"
             rel="noopener noreferrer"
             className={linkClass}
           >
             {isEn ? "Resume" : "Резюме"}
-          </a>
-          <a href="mailto:valera@internet.ru" className={linkClass}>
+          </PluckedLink>
+          <PluckedLink href="mailto:valera@internet.ru" className={linkClass}>
             {isEn ? "Email" : "Почта"}
-          </a>
-          <a href="https://www.linkedin.com/in/vsirotkin/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+          </PluckedLink>
+          <PluckedLink href="https://www.linkedin.com/in/vsirotkin/" target="_blank" rel="noopener noreferrer" className={linkClass}>
             LinkedIn
-          </a>
+          </PluckedLink>
         </div>
       </section>
     </header>
